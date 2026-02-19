@@ -590,9 +590,9 @@
                     </p>
                     
                     <div class="flex gap-6 mt-8">
-                        <a href="https://www.instagram.com/veniprefabrik/" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
-    <i class="fa-brands fa-instagram text-2xl group-hover:text-white transition-colors"></i>
-</a>
+                        <a href="#" onclick="openInstagram(event)" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
+                            <i class="fa-brands fa-instagram text-2xl group-hover:text-white transition-colors"></i>
+                        </a>
 
                         <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-[#1877F2] hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
                             <i class="fa-brands fa-facebook-f text-2xl group-hover:text-white transition-colors"></i>
@@ -810,6 +810,33 @@
                 document.getElementById('katalogBasarili').classList.remove('hidden');
                 
             }, 1500);
+        }
+
+        // --- YENİ EKLENEN INSTAGRAM MOTORU ---
+        function openInstagram(e) {
+            e.preventDefault(); // Varsayılan tıklamayı durdur
+            var username = 'veniprefabrik';
+            
+            // Telefonlar için özel API emri
+            var appUrl = 'instagram://user?username=' + username;
+            // Bilgisayarlar veya uygulaması olmayanlar için normal web linki
+            var webUrl = 'https://www.instagram.com/' + username + '/';
+            
+            // Cihazın mobil olup olmadığını tespit et
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // Mobildeyse doğrudan Instagram uygulamasını hedefe kilitli aç
+                window.location.href = appUrl;
+                
+                // Eğer telefonda Instagram yüklü değilse, 1 saniye sonra tarayıcıda aç
+                setTimeout(function() {
+                    window.location.href = webUrl;
+                }, 1000);
+            } else {
+                // Bilgisayardaysa direkt yeni sekmede aç
+                window.open(webUrl, '_blank');
+            }
         }
     </script>
 </body>
