@@ -418,7 +418,7 @@
                                 </button>
                                 
                                 <p class="text-[10px] text-center text-slate-400 mt-2">
-                                    <i class="fa-solid fa-lock"></i> Kişisel verileriniz VENI gizlilik politikası uyarınca korunmaktadır.
+                                    <i class="fa-solid fa-lock"></i> Kişisel verileriniz <span onclick="openModal('kvkkModal')" class="underline cursor-pointer hover:text-amber-500 transition-colors">KVKK Aydınlatma Metni</span> uyarınca korunmaktadır.
                                 </p>
                             </form>
                             
@@ -649,10 +649,11 @@
                         Fiyat vermeden önce, arsa eğimi ve iklim bölgenize uygun yalıtım kalınlığını hesaplamamız gerekiyor. Sadece 3 soruda analiz edelim.
                     </p>
                 </div>
+                
                 <div class="relative z-10 mt-8 hidden md:block">
                     <div class="flex items-center gap-3 text-xs text-slate-400 border-t border-slate-700 pt-4">
                         <i class="fa-solid fa-user-shield text-xl"></i>
-                        <span>Verileriniz 256-bit şifreleme ile korunur.</span>
+                        <span>Verileriniz <span onclick="openModal('kvkkModal')" class="text-amber-400 underline cursor-pointer hover:text-white transition-colors">KVKK kapsamında</span> korunur.</span>
                     </div>
                 </div>
             </div>
@@ -795,6 +796,26 @@
         </div>
     </div>
 
+    <div id="kvkkModal" class="modal fixed inset-0 z-[70] flex items-center justify-center bg-slate-900/90 backdrop-blur-md p-4">
+        <div class="modal-content bg-white w-full max-w-3xl max-h-[85vh] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col">
+            <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <h3 class="text-xl font-serif font-bold text-slate-900"><i class="fa-solid fa-scale-balanced text-amber-500 mr-3"></i>KVKK Aydınlatma Metni</h3>
+                <button onclick="closeModal('kvkkModal')" class="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-8 overflow-y-auto text-sm text-slate-600 space-y-5 font-medium leading-relaxed">
+                <p><strong>1. Veri Sorumlusu</strong><br>Veni Prefabrik A.Ş. ("Şirket") olarak, kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekteyiz. Bu bilinçle, Şirket olarak ürün ve hizmetlerimizden faydalanan kişiler dahil, Şirket ile ilişkili tüm şahıslara ait her türlü kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVK Kanunu")'na uygun olarak işlenerek, muhafaza edilmesine büyük önem atfetmekteyiz.</p>
+                <p><strong>2. Kişisel Verilerin Toplanması, İşlenmesi ve İşleme Amaçları</strong><br>Toplanan kişisel verileriniz (Ad, Soyad, Telefon Numarası, E-posta Adresi, Lokasyon Bilgisi); Şirketimiz tarafından sunulan ürün ve hizmetlerden (Katalog gönderimi, Maliyet hesaplaması vb.) sizleri faydalandırmak için gerekli çalışmaların iş birimlerimiz tarafından yapılması, taleplerinize istinaden sizinle iletişime geçilmesi amaçlarıyla işlenmektedir.</p>
+                <p><strong>3. İşlenen Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</strong><br>Toplanan kişisel verileriniz, yukarıda belirtilen amaçların gerçekleştirilmesi doğrultusunda, hukuki uyuşmazlıkların giderilmesi veya ilgili mevzuatı gereği yetkili kamu kurum ve kuruluşlarına aktarılabilecektir. Verileriniz hiçbir şekilde 3. parti reklam ajanslarına satılmaz veya pazarlanmaz.</p>
+                <p><strong>4. Kişisel Veri Sahibinin Hakları</strong><br>KVK Kanunu'nun 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, amacına uygun kullanılıp kullanılmadığını öğrenme ve silinmesini/yok edilmesini talep etme hakkına sahipsiniz. Başvurularınızı <strong>veniprefabrik@gmail.com</strong> adresi üzerinden bize iletebilirsiniz.</p>
+            </div>
+            <div class="p-6 border-t border-slate-100 bg-slate-50 text-center">
+                <button onclick="closeModal('kvkkModal')" class="bg-slate-900 text-white font-bold py-3 px-12 rounded-xl hover:bg-slate-800 transition-colors shadow-lg">Okudum, Anladım</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Form Sihirbazı (Multi-step) İşlemleri
         function nextStep(step) {
@@ -837,19 +858,24 @@
             }
         }
 
-        // Modal İşlemleri
+        // Akıllı Modal İşlemleri
         function openModal(modalId) {
             document.getElementById(modalId).classList.add('active');
             document.body.style.overflow = 'hidden'; 
             
-            // Modalı her açtığında formu ilk adıma sıfırla
+            // Maliyet formunu her açtığında ilk adıma sıfırla
             if(modalId === 'offerModal') {
                 prevStep(1);
             }
         }
+        
         function closeModal(modalId) {
             document.getElementById(modalId).classList.remove('active');
-            document.body.style.overflow = 'auto';
+            
+            // Eğer ekranda açık BŞKA BİR modal kalmadıysa ana ekran kaydırmasını (scroll) geri aç
+            if(document.querySelectorAll('.modal.active').length === 0) {
+                document.body.style.overflow = 'auto';
+            }
         }
 
         // Accordion İşlemleri
