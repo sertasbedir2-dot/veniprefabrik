@@ -99,8 +99,8 @@
             <div class="hidden lg:flex items-center gap-10 text-sm font-semibold text-slate-300 uppercase tracking-wider">
                 <a href="#" class="hover:text-amber-400 transition-all hover:-translate-y-1">Ana Sayfa</a>
                 <a href="#teknik" class="hover:text-amber-400 transition-all hover:-translate-y-1">Teknik Analiz</a>
+                <a href="#uretim" class="hover:text-amber-400 transition-all hover:-translate-y-1">Üretim</a>
                 <a href="#galeri" class="hover:text-amber-400 transition-all hover:-translate-y-1">Modeller</a>
-                <a href="#mevzuat" class="hover:text-amber-400 transition-all hover:-translate-y-1">Yasal Mevzuat</a>
                 <button onclick="openModal('offerModal')" class="ml-4 px-6 py-3 bg-amber-500 text-slate-900 rounded-lg hover:bg-amber-400 hover:shadow-gold-glow transition-all font-bold transform hover:scale-105 active:scale-95">
                     Mühendislik Hesabı Al
                 </button>
@@ -257,6 +257,42 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="uretim" class="relative py-32 bg-slate-950 overflow-hidden border-y border-slate-800">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1920&q=80" alt="Çelik Üretim Fabrikası" class="w-full h-full object-cover opacity-20 mix-blend-luminosity grayscale">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1 text-amber-400 text-xs font-bold uppercase tracking-widest backdrop-blur-sm mb-6">
+                    <i class="fa-solid fa-industry"></i> ÜRETİM TESİSİ
+                </div>
+                <h2 class="text-4xl md:text-6xl font-serif font-black text-white leading-tight mb-6">
+                    Aracı Değil, <br><span class="text-amber-500 italic">Üreticiyiz.</span>
+                </h2>
+                <p class="text-slate-300 text-lg leading-relaxed mb-12 font-medium">
+                    Hayallerinizi taşeronlara devretmiyoruz. Bilgisayar destekli CNC Rollform hatlarımızdan çıkan her bir milimetrik çelik profil, kendi mühendislerimizin denetiminden geçerek doğrudan arsanıza ulaşır.
+                </p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-slate-800 pt-10">
+                    <div>
+                        <p class="text-4xl font-black text-white font-serif mb-1">5.000<span class="text-amber-500 text-2xl font-sans">m²</span></p>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Kapalı Üretim Alanı</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-black text-white font-serif mb-1">%100</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Yerli Çekim Profil</p>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="text-4xl font-black text-white font-serif mb-1"><i class="fa-solid fa-crosshairs text-amber-500 text-3xl"></i></p>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-2">Sıfır Hata Payı (CNC)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -644,7 +680,7 @@
                 <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')] bg-cover bg-center"></div>
                 <div class="relative z-10">
                     <h3 class="text-3xl font-serif font-bold mb-2">Maliyet Hesapla</h3>
-                    <p class="text-amber-400 uppercase tracking-widest text-sm font-bold">Mühendislik Yaklaşımı</p>
+                    <p class="text-amber-400 uppercase tracking-widest text-sm font-bold">Mühendis Yaklaşımı</p>
                     <p class="text-xs text-slate-300 mt-4 leading-relaxed">
                         Fiyat vermeden önce, arsa eğimi ve iklim bölgenize uygun yalıtım kalınlığını hesaplamamız gerekiyor. Sadece 3 soruda analiz edelim.
                     </p>
@@ -863,7 +899,6 @@
             document.getElementById(modalId).classList.add('active');
             document.body.style.overflow = 'hidden'; 
             
-            // Maliyet formunu her açtığında ilk adıma sıfırla
             if(modalId === 'offerModal') {
                 prevStep(1);
             }
@@ -872,7 +907,6 @@
         function closeModal(modalId) {
             document.getElementById(modalId).classList.remove('active');
             
-            // Eğer ekranda açık BŞKA BİR modal kalmadıysa ana ekran kaydırmasını (scroll) geri aç
             if(document.querySelectorAll('.modal.active').length === 0) {
                 document.body.style.overflow = 'auto';
             }
