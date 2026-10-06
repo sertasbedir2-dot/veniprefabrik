@@ -4,57 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Veni Prefabrik | Yeni Nesil Yapı Teknolojileri</title>
-    <meta name="description" content="Türkiye'nin %100 mühendislik denetimli, S350GD yapısal çelik ve rollform teknolojisiyle üretilen yeni nesil prefabrik yapıları.">
-    <meta name="keywords" content="prefabrik ev, çelik ev, hafif çelik, tiny house, veni prefabrik, depreme dayanıklı çelik villa">
-    <meta name="author" content="Veni Prefabrik">
+    <title>VENİ Altyapı Tamirat | Kanal, Baca, Havalandırma & Bahçe Bakım Hizmetleri</title>
+    <meta name="description" content="VENİ Altyapı Tamirat: Kanal açma ve baca temizliği, endüstriyel havalandırma kanalı bakımı, profesyonel bahçe bakım ve çevre temizlik hizmetleri. 7/24 Hızlı Servis.">
+    <meta name="keywords" content="baca temizliği, kanal temizliği, tıkanıklık açma, havalandırma kanalı temizliği, bahçe bakımı, bahçe temizleme, logar açma, Sefer Çam, Serdar Ertubç, veni altyapı">
+    <meta name="author" content="VENİ Altyapı Tamirat">
     
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.veniprefabrik.com/">
-    <meta property="og:title" content="Veni Prefabrik | Yeni Nesil Yapı Teknolojileri">
-    <meta property="og:description" content="Kaynak yok, pas yok, risk yok. Torunlarınıza miras kalacak %100 mühendislik denetimli çelik yapılar.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:title" content="VENİ Altyapı Tamirat | Profesyonel Kanal, Baca & Havalandırma Temizliği">
+    <meta property="og:description" content="Kameralı robotla kanal açma, itfaiye standartlarında baca temizliği, mutfak/fabrika havalandırma kanalı arındırma ve bahçe bakım hizmetleri.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80">
     
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Veni Prefabrik | Yeni Nesil Yapı Teknolojileri">
-    <meta name="twitter:description" content="Kaynak yok, pas yok, risk yok. Torunlarınıza miras kalacak %100 mühendislik denetimli çelik yapılar.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta name="twitter:title" content="VENİ Altyapı Tamirat | Kanal, Baca & Havalandırma">
+    <meta name="twitter:description" content="Kanal açma, baca temizleme, havalandırma kanalı ve bahçe bakım çözümleri. Sefer Çam & Serdar Ertubç">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80">
     
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Space Grotesk"', 'sans-serif'],
                     },
                     colors: {
-                        patronDark: '#0f172a',
-                        patronGold: '#fbbf24',
-                        engineeringBlue: '#002b49',
+                        veniDark: '#0b132b',
+                        veniNavy: '#1c2541',
+                        veniBlue: '#3a86ff',
+                        veniAmber: '#f59e0b',
+                        veniGreen: '#10b981',
+                        veniOrange: '#ea580c',
                     },
-                    dropShadow: {
-                        'gold-glow': '0 0 15px rgba(251, 191, 36, 0.6)',
-                    },
-                    animation: {
-                        'scan': 'scan 4s linear infinite',
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        scan: {
-                            '0%': { transform: 'translateY(-100%)' },
-                            '100%': { transform: 'translateY(100%)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        }
+                    boxShadow: {
+                        'glow-amber': '0 0 25px rgba(245, 158, 11, 0.35)',
+                        'glow-blue': '0 0 25px rgba(58, 134, 255, 0.35)',
                     }
                 }
             }
@@ -62,888 +56,1123 @@
     </script>
     
     <style>
-        .faq-content { transition: max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease; max-height: 0; opacity: 0; overflow: hidden; }
-        .faq-active .faq-content { max-height: 500px; opacity: 1; padding-top: 1rem; }
-        .faq-icon { transition: transform 0.3s ease; }
-        .faq-active .faq-icon { transform: rotate(180deg); color: #fbbf24; }
+        .faq-content { transition: max-height 0.35s ease, opacity 0.3s ease; max-height: 0; opacity: 0; overflow: hidden; }
+        .faq-item.active .faq-content { max-height: 450px; opacity: 1; padding-top: 1rem; }
+        .faq-item.active .faq-icon { transform: rotate(180deg); color: #f59e0b; }
         
-        .modal { opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; }
+        .modal { opacity: 0; visibility: hidden; transition: opacity 0.25s ease, visibility 0.25s ease; }
         .modal.active { opacity: 1; visibility: visible; }
-        .modal-content { transform: scale(0.9); transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
-        .modal.active .modal-content { transform: scale(1); }
-        
-        .step-container { display: none; animation: fadeIn 0.5s; }
-        .step-container.active { display: block; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
+        .modal-card { transform: scale(0.95); transition: transform 0.25s ease; }
+        .modal.active .modal-card { transform: scale(1); }
 
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 5px; }
-        ::-webkit-scrollbar-thumb:hover { background: #fbbf24; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b132b; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
     </style>
 </head>
-<body class="bg-gray-50 font-sans antialiased text-slate-800 pb-16 md:pb-0">
+<body class="bg-slate-950 font-sans text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950 pb-20 md:pb-0">
 
-    <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 shadow-2xl transition-all py-3">
-        <div class="container mx-auto px-6 flex justify-between items-center relative">
-            <a href="#" class="flex items-center gap-5 group">
-                <div class="relative w-16 h-16 flex items-center justify-center">
-                    <i class="fa-solid fa-house text-6xl text-slate-700 absolute opacity-40 group-hover:text-amber-500/30 transition-colors duration-500"></i>
-                    <i class="fa-solid fa-compass-drafting text-4xl text-amber-400 relative z-10 drop-shadow-gold-glow transform group-hover:scale-110 transition-transform duration-500"></i>
+    <!-- Top Emergency Contact Header Bar -->
+    <aside aria-label="Acil İletişim Bilgileri" class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 text-xs md:text-sm font-semibold py-2 px-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
+                <span class="font-bold tracking-wide uppercase">7/24 Acil Altyapı & Müdahale Hattı</span>
+                <span class="hidden sm:inline text-slate-900/60 font-normal">| Kameralı Robotla Açma & Temizlik</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <a href="tel:+905318642495" class="hover:underline flex items-center gap-1.5 font-bold">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Sefer Çam:</span> <span class="tracking-wider">0531 864 24 95</span>
+                </a>
+                <span class="text-slate-900/40">·</span>
+                <a href="tel:+905366176260" class="hover:underline flex items-center gap-1.5 font-bold">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Serdar Ertubç:</span> <span class="tracking-wider">0536 617 62 60</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-xl border-b border-slate-800 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-slate-950 text-2xl font-black shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
                 </div>
-                <div class="flex flex-col leading-none">
-                    <h1 class="text-4xl md:text-5xl font-serif font-black text-white tracking-wider drop-shadow-md">VENI</h1>
-                    <span class="text-amber-400 text-xs md:text-sm font-bold tracking-[0.4em] uppercase border-t border-amber-400/30 pt-1 mt-1">PREFABRİK</span>
+                <div class="flex flex-col">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-2xl font-display font-extrabold text-white tracking-tight">VENİ</span>
+                        <span class="text-xs uppercase font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">Altyapı</span>
+                    </div>
+                    <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-widest -mt-0.5">Tamirat & Temizlik</span>
                 </div>
             </a>
-            <div class="hidden lg:flex items-center gap-10 text-sm font-semibold text-slate-300 uppercase tracking-wider">
-                <a href="#" class="hover:text-amber-400 transition-all hover:-translate-y-1">Ana Sayfa</a>
-                <a href="#teknik" class="hover:text-amber-400 transition-all hover:-translate-y-1">Teknik Analiz</a>
-                <a href="#uretim" class="hover:text-amber-400 transition-all hover:-translate-y-1">Üretim</a>
-                <a href="#galeri" class="hover:text-amber-400 transition-all hover:-translate-y-1">Modeller</a>
-                <button onclick="openModal('offerModal')" class="ml-4 px-6 py-3 bg-amber-500 text-slate-900 rounded-lg hover:bg-amber-400 hover:shadow-gold-glow transition-all font-bold transform hover:scale-105 active:scale-95">
-                    Mühendislik Hesabı Al
-                </button>
-            </div>
-        </div>
-    </nav>
 
-    <header class="relative h-[850px] flex items-center justify-center text-center text-white pt-20 overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-[40s] hover:scale-110" 
-             style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');">
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/60 to-slate-900/90 z-10"></div>
-        
-        <div class="relative z-20 container mx-auto px-6 animate-fade-in-up">
-            <div class="text-amber-400 text-6xl mb-6 drop-shadow-gold-glow opacity-90 animate-float">
-                <i class="fa-solid fa-compass-drafting"></i>
-            </div>
-            <span class="inline-block py-2 px-6 mb-8 bg-white/5 border border-white/10 rounded-full text-amber-400 text-sm font-bold uppercase tracking-[0.3em] backdrop-blur-md">
-                <i class="fa-solid fa-triangle-exclamation mr-2"></i> Usta Hatalarına Son
-            </span>
-            <h2 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-black mb-8 drop-shadow-2xl leading-none">
-                TÜRKİYE'NİN <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 italic text-4xl sm:text-5xl md:text-7xl">%100 MÜHENDİSLİK DENETİMLİ</span>
-            </h2>
-            <p class="text-xl md:text-2xl font-light text-slate-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-                Kaynak yok, pas yok, risk yok. <strong class="text-amber-400 font-semibold">S350GD Yapısal Çelik</strong> ve <strong class="text-white font-semibold">Rollform Teknolojisi</strong> ile torunlarınıza miras kalacak yapılar.
-            </p>
-            <div class="flex flex-col md:flex-row gap-6 justify-center">
-                <a href="#teknik" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-5 px-16 rounded-xl transition-all transform hover:-translate-y-2 shadow-2xl shadow-amber-500/30 flex items-center justify-center gap-3 text-lg">
-                    Teknik Farkları Gör <i class="fa-solid fa-arrow-down"></i>
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#hizmetler" class="hover:text-amber-400 transition-colors">Hizmetlerimiz</a>
+                <a href="#kanal" class="hover:text-amber-400 transition-colors">Kanal & Baca</a>
+                <a href="#havalandirma" class="hover:text-amber-400 transition-colors">Havalandırma</a>
+                <a href="#bahce" class="hover:text-amber-400 transition-colors">Bahçe Bakımı</a>
+                <a href="#hesaplayici" class="hover:text-amber-400 transition-colors">Fiyat Hesapla</a>
+                <a href="#iletisim" class="hover:text-amber-400 transition-colors">İletişim</a>
+            </nav>
+
+            <!-- Quick Action Direct Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/905318642495?text=Merhaba%2C%20VEN%C4%B0%20Altyap%C4%B1%20Tamirat%20hizmetleriniz%20i%C3%A7in%20bilgi%20ve%20fiyat%20almak%20istiyorum." 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="px-4 py-2.5 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 text-xs font-bold flex items-center gap-2 transition-all">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
                 </a>
-                <button onclick="openModal('offerModal')" class="bg-white/5 hover:bg-white/15 text-white border-2 border-white/30 py-5 px-16 rounded-xl transition-all font-semibold flex items-center justify-center gap-3 backdrop-blur-lg text-lg group">
-                   Maliyet Hesapla <i class="fa-solid fa-calculator group-hover:text-amber-400 transition-colors"></i>
+                <button onclick="openModal('quickModal')" 
+                        class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all hover:scale-105 active:scale-95">
+                    <i class="fa-solid fa-headset mr-1.5"></i> Hızlı Talep
                 </button>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-slate-300 hover:text-white" aria-label="Menü">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-800 bg-slate-900 px-6 py-6 space-y-4">
+            <a href="#hizmetler" onclick="toggleMobileMenu()" class="block text-slate-200 font-semibold hover:text-amber-400">Hizmetlerimiz</a>
+            <a href="#kanal" onclick="toggleMobileMenu()" class="block text-slate-200 font-semibold hover:text-amber-400">Kanal & Baca Temizliği</a>
+            <a href="#havalandirma" onclick="toggleMobileMenu()" class="block text-slate-200 font-semibold hover:text-amber-400">Havalandırma Kanalı</a>
+            <a href="#bahce" onclick="toggleMobileMenu()" class="block text-slate-200 font-semibold hover:text-amber-400">Bahçe Bakım & Temizlik</a>
+            <a href="#hesaplayici" onclick="toggleMobileMenu()" class="block text-slate-200 font-semibold hover:text-amber-400">Fiyat & Keşif Hesapla</a>
+            <a href="#iletisim" onclick="toggleMobileMenu()" class="block text-slate-200 font-semibold hover:text-amber-400">İletişim</a>
+            
+            <div class="pt-4 border-t border-slate-800 grid grid-cols-2 gap-3">
+                <a href="tel:+905318642495" class="py-2.5 px-3 bg-amber-500 text-slate-950 rounded-lg text-center font-bold text-xs">
+                    <i class="fa-solid fa-phone mr-1"></i> Sefer Çam
+                </a>
+                <a href="tel:+905366176260" class="py-2.5 px-3 bg-slate-800 text-white rounded-lg text-center font-bold text-xs border border-slate-700">
+                    <i class="fa-solid fa-phone mr-1"></i> Serdar Ertubç
+                </a>
             </div>
         </div>
     </header>
 
-    <section class="py-16 bg-slate-900 border-b border-slate-800 relative z-20 -mt-20 mx-4 md:mx-20 rounded-3xl shadow-2xl">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-700/50">
-                <div class="p-4 group">
-                    <div class="mb-4 text-amber-400 text-4xl group-hover:scale-110 transition-transform duration-300"><i class="fa-solid fa-hammer"></i></div>
-                    <h4 class="text-xl font-bold text-white mb-2">SIFIR KAYNAK</h4>
-                    <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">Sadece Civata & Perçin</p>
-                </div>
-                <div class="p-4 group">
-                    <div class="mb-4 text-amber-400 text-4xl group-hover:scale-110 transition-transform duration-300"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4 class="text-xl font-bold text-white mb-2">S350GD ÇELİK</h4>
-                    <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">Yapısal Sertifikalı</p>
-                </div>
-                <div class="p-4 group">
-                    <div class="mb-4 text-amber-400 text-4xl group-hover:scale-110 transition-transform duration-300"><i class="fa-solid fa-temperature-full"></i></div>
-                    <h4 class="text-xl font-bold text-white mb-2">TAŞYÜNÜ YALITIM</h4>
-                    <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">Yanmaz A1 Sınıfı</p>
-                </div>
-                <div class="p-4 group">
-                    <div class="mb-4 text-amber-400 text-4xl group-hover:scale-110 transition-transform duration-300"><i class="fa-solid fa-ruler-combined"></i></div>
-                    <h4 class="text-xl font-bold text-white mb-2">ROLLFORM</h4>
-                    <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">Milimetrik Üretim</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(245,158,11,0.15),rgba(255,255,255,0))]"></div>
+        <div class="absolute -top-40 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    <section class="relative bg-slate-900 py-32 overflow-hidden border-t border-slate-800">
-        <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/blueprint.png');"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-20">
-                <h2 class="text-amber-400 font-sans text-base font-bold tracking-[0.3em] uppercase mb-4">VENI MÜHENDİSLİĞİ</h2>
-                <h3 class="text-5xl md:text-6xl font-serif text-white font-black">Görünmeyeni <span class="italic text-amber-400">Görün</span></h3>
-                <div class="w-32 h-1.5 bg-amber-500 mx-auto mt-8 rounded-full"></div>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="relative group perspective-1000">
-                    <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-2 border-slate-700 transform transition-transform duration-700 group-hover:rotate-y-6">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Çelik Konstrüksiyon" class="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                        <div class="absolute bottom-8 left-8 bg-slate-900/95 backdrop-blur-xl border-l-8 border-amber-500 px-8 py-6 rounded-r-2xl shadow-2xl">
-                            <p class="text-amber-400 text-sm font-bold uppercase tracking-wider mb-1">X-RAY ANALİZİ</p>
-                            <p class="text-white text-2xl font-serif font-bold">Termo-Zırh Çelik İskelet</p>
-                        </div>
-                         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-amber-400/10 to-transparent h-[200%] w-full -translate-y-1/2 animate-scan pointer-events-none"></div>
-                    </div>
-                </div>
-                <div class="space-y-8">
-                    <div class="group bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 p-8 rounded-2xl hover:border-amber-500 transition-all duration-500 hover:-translate-y-2">
-                        <div class="flex items-start gap-6">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-slate-950 text-amber-400 text-3xl border border-slate-800"><i class="fa-solid fa-temperature-arrow-down"></i></div>
-                            <div>
-                                <h4 class="text-2xl font-serif font-bold text-white mb-3 group-hover:text-amber-400">Termal Konfor (Taşyünü)</h4>
-                                <p class="text-slate-400 text-base leading-relaxed">150 dansite yoğunluğunda volkanik taşyünü. Kışın ısıyı içeride hapseder, yazın serinliği korur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="group bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 p-8 rounded-2xl hover:border-amber-500 transition-all duration-500 hover:-translate-y-2">
-                        <div class="flex items-start gap-6">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-slate-950 text-amber-400 text-3xl border border-slate-800"><i class="fa-solid fa-cubes-stacked"></i></div>
-                            <div>
-                                <h4 class="text-2xl font-serif font-bold text-white mb-3 group-hover:text-amber-400">Galvaniz Çelik Omurga</h4>
-                                <p class="text-slate-400 text-base leading-relaxed">Paslanmaya karşı 50 yıl garantili, Z275 kaplamalı yüksek mukavemetli hafif çelik konstrüksiyon.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="group bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 p-8 rounded-2xl hover:border-amber-500 transition-all duration-500 hover:-translate-y-2">
-                        <div class="flex items-start gap-6">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-xl bg-slate-950 text-amber-400 text-3xl border border-slate-800"><i class="fa-solid fa-droplet-slash"></i></div>
-                            <div>
-                                <h4 class="text-2xl font-serif font-bold text-white mb-3 group-hover:text-amber-400">Tyvek Nem Bariyeri</h4>
-                                <p class="text-slate-400 text-base leading-relaxed">Yapının nefes almasını sağlarken suyu ve rüzgarı %100 geçirmez. Buhar kesici ile terlemeyi önler.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="teknik" class="py-24 bg-slate-50 border-t border-slate-200">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <div class="text-center mb-16">
-                <h2 class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-3">REKABET ANALİZİ</h2>
-                <h3 class="text-4xl font-serif font-black text-slate-900">Neden Veni Prefabrik?</h3>
-                <p class="text-slate-600 mt-4">Biz sadece ev yapmıyoruz, yapı fiziği kurallarına uygun yaşam alanları mühendisliği yapıyoruz.</p>
-            </div>
-
-            <div class="overflow-x-auto shadow-2xl rounded-2xl">
-                <table class="w-full bg-white text-left border-collapse">
-                    <thead>
-                        <tr class="bg-slate-900 text-white">
-                            <th class="p-6 w-1/3 text-sm font-bold tracking-wider uppercase">KRİTERLER</th>
-                            <th class="p-6 w-1/3 text-sm font-bold tracking-wider uppercase bg-slate-800 text-slate-400 text-center">PİYASA STANDARDI</th>
-                            <th class="p-6 w-1/3 text-sm font-bold tracking-wider uppercase bg-amber-500 text-slate-900 text-center">VENI STANDARDI</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm md:text-base">
-                        <tr class="border-b border-slate-100 hover:bg-slate-50">
-                            <td class="p-6 font-bold text-slate-700">Çelik Kalitesi</td>
-                            <td class="p-6 text-center text-slate-500"><i class="fa-solid fa-xmark text-red-500 mr-2"></i> DX51 (Yumuşak Çelik)</td>
-                            <td class="p-6 text-center font-bold text-slate-900 bg-amber-50"><i class="fa-solid fa-check text-green-600 mr-2"></i> S350GD (Yapısal Çelik)</td>
-                        </tr>
-                        <tr class="border-b border-slate-100 hover:bg-slate-50">
-                            <td class="p-6 font-bold text-slate-700">Birleşim Yöntemi</td>
-                            <td class="p-6 text-center text-slate-500"><i class="fa-solid fa-xmark text-red-500 mr-2"></i> Kaynaklı (Paslanır)</td>
-                            <td class="p-6 text-center font-bold text-slate-900 bg-amber-50"><i class="fa-solid fa-check text-green-600 mr-2"></i> Civata & Perçin (Soğuk)</td>
-                        </tr>
-                        <tr class="border-b border-slate-100 hover:bg-slate-50">
-                            <td class="p-6 font-bold text-slate-700">Yalıtım Malzemesi</td>
-                            <td class="p-6 text-center text-slate-500"><i class="fa-solid fa-xmark text-red-500 mr-2"></i> Strafor / Köpük (Yanıcı)</td>
-                            <td class="p-6 text-center font-bold text-slate-900 bg-amber-50"><i class="fa-solid fa-check text-green-600 mr-2"></i> Taşyünü (Yanmaz A1)</td>
-                        </tr>
-                        <tr class="border-b border-slate-100 hover:bg-slate-50">
-                            <td class="p-6 font-bold text-slate-700">Duvar Yapısı</td>
-                            <td class="p-6 text-center text-slate-500"><i class="fa-solid fa-xmark text-red-500 mr-2"></i> Sandviç Panel</td>
-                            <td class="p-6 text-center font-bold text-slate-900 bg-amber-50"><i class="fa-solid fa-check text-green-600 mr-2"></i> Çelik Karkas + OSB + Mantolama</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <section id="uretim" class="relative py-32 bg-slate-950 overflow-hidden border-y border-slate-800">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1920&q=80" alt="Çelik Üretim Fabrikası" class="w-full h-full object-cover opacity-20 mix-blend-luminosity grayscale">
-            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
-        </div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1 text-amber-400 text-xs font-bold uppercase tracking-widest backdrop-blur-sm mb-6">
-                    <i class="fa-solid fa-industry"></i> ÜRETİM TESİSİ
-                </div>
-                <h2 class="text-4xl md:text-6xl font-serif font-black text-white leading-tight mb-6">
-                    Aracı Değil, <br><span class="text-amber-500 italic">Üreticiyiz.</span>
-                </h2>
-                <p class="text-slate-300 text-lg leading-relaxed mb-12 font-medium">
-                    Hayallerinizi taşeronlara devretmiyoruz. Bilgisayar destekli CNC Rollform hatlarımızdan çıkan her bir milimetrik çelik profil, kendi mühendislerimizin denetiminden geçerek doğrudan arsanıza ulaşır.
-                </p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-slate-800 pt-10">
-                    <div>
-                        <p class="text-4xl font-black text-white font-serif mb-1">5.000<span class="text-amber-500 text-2xl font-sans">m²</span></p>
-                        <p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Kapalı Üretim Alanı</p>
-                    </div>
-                    <div>
-                        <p class="text-4xl font-black text-white font-serif mb-1">%100</p>
-                        <p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Yerli Çekim Profil</p>
-                    </div>
-                    <div class="hidden md:block">
-                        <p class="text-4xl font-black text-white font-serif mb-1"><i class="fa-solid fa-crosshairs text-amber-500 text-3xl"></i></p>
-                        <p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-2">Sıfır Hata Payı (CNC)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="galeri" class="py-32 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-10">
-                <div class="max-w-3xl">
-                    <span class="text-amber-500 font-bold tracking-[0.2em] uppercase text-sm flex items-center gap-3 mb-4">
-                        <i class="fa-solid fa-compass-drafting"></i> Mimari Estetik
-                    </span>
-                    <h2 class="text-5xl md:text-7xl font-serif font-black text-slate-900 mt-2 leading-tight">
-                        Hayatın <span class="italic text-amber-500 relative z-10 after:content-[''] after:absolute after:bottom-2 after:left-0 after:w-full after:h-4 after:bg-amber-100 after:-z-10">İçinden</span> Kareler
-                    </h2>
-                </div>
-                <p class="text-slate-600 max-w-lg text-lg leading-relaxed border-l-8 border-amber-500 pl-6 font-medium">
-                    Minimalist çizgiler, doğal ışık ve premium malzemelerin dansı. Her köşe, konforunuz için milimetrik hesaplandı.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[800px]">
-                
-                <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-[2rem] cursor-pointer shadow-2xl" onclick="openModal('planModal')">
-                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Lüks Salon" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-                    <div class="absolute top-6 right-6 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white font-bold border border-white/30 hover:bg-amber-500 transition-colors">
-                        <i class="fa-solid fa-ruler-combined"></i> 140 m²
-                    </div>
-                    <div class="absolute bottom-8 left-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 w-3/4">
-                        <p class="text-amber-400 text-sm font-bold uppercase mb-2 tracking-wider">Loft Serisi</p>
-                        <h3 class="text-white text-3xl font-serif font-bold">Geniş Ferah Salonlar</h3>
-                        <p class="text-slate-200 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Kat planını görmek için tıklayın.</p>
-                    </div>
-                </div>
-
-                <div class="md:col-span-2 relative group overflow-hidden rounded-[2rem] cursor-pointer shadow-xl" onclick="openModal('planModal')">
-                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Mutfak" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                        <span class="border-2 border-amber-400 text-amber-400 px-8 py-3 rounded-full backdrop-blur-md font-bold uppercase tracking-wider hover:bg-amber-400 hover:text-slate-900 transition-all">Kat Planını Gör</span>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-[2rem] cursor-pointer shadow-xl" onclick="openModal('planModal')">
-                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80" alt="Lüks Banyo" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-amber-500/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-center p-6">
-                        <i class="fa-solid fa-water text-5xl text-white mb-4 drop-shadow-md"></i>
-                        <p class="text-white font-bold text-2xl font-serif">Spa Konforu</p>
-                    </div>
-                </div>
-
-                <div class="relative group overflow-hidden rounded-[2rem] cursor-pointer shadow-xl" onclick="openModal('planModal')">
-                    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=400&q=80" alt="Bahçe" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
-                    <div class="absolute bottom-0 left-0 w-full p-6 bg-slate-900/90 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                        <p class="text-white font-medium">Doğa ile iç içe veranda keyfi.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 relative overflow-hidden bg-slate-900 z-10">
-        <div class="absolute inset-0 bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 z-0"></div>
-        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/graphy-dark.png')] z-0"></div>
-        
-        <div class="absolute -top-24 -left-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-black/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
-                
-                <div class="lg:w-1/2 text-center lg:text-left space-y-8">
-                    <div class="inline-flex items-center gap-2 bg-slate-900/10 border border-slate-900/20 rounded-full px-4 py-1 text-slate-900 text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
-                        <i class="fa-solid fa-bolt"></i> V.2026 Güncel Sürüm
-                    </div>
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-6">
                     
-                    <h2 class="text-4xl md:text-6xl font-serif font-black text-white leading-tight drop-shadow-lg">
-                        Evinizin <br>
-                        <span class="text-slate-900 relative">
-                            Röntgenini
-                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-white opacity-40" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="none" /></svg>
-                        </span> Çektik.
-                    </h2>
-                    
-                    <p class="text-white/90 text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        Bu dosya sadece katalog değil; duvar kesitlerini, ısı köprüsü analizlerini ve S350GD çelik sertifikalarını içeren bir <strong>Mühendislik Beyannamesidir.</strong>
+                    <!-- Clean Kicker -->
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300">
+                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                        <span>Mekanik & Robotik Müdahale Çözümleri</span>
+                        <span class="text-slate-600">·</span>
+                        <span class="text-amber-400 font-bold">7/24 Kesintisiz Hizmet</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.1]">
+                        Kanal, Baca, Havalandırma ve <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">
+                            Bahçe Bakımında
+                        </span> Profesyonel Güç.
+                    </h1>
+
+                    <p class="text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
+                        Tıkanan kanalizasyon hatları, yangın riski taşıyan yağlı baca & havalandırma kanalları ve bakımsız bahçeler için <strong>kırmadan dökmeden, garantili ve teknik donanımlı</strong> temizlik ve tamirat hizmeti sunuyoruz.
                     </p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white/80 text-sm font-semibold">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white"><i class="fa-solid fa-layer-group"></i></div>
-                            Duvar & Çatı Kesit Detayları
+                    <!-- Contact Person Showcase Badges -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <!-- Sefer Çam Card -->
+                        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-amber-500/50 transition-all flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold border border-amber-500/30">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Usta & Saha Sorumlusu</p>
+                                    <h2 class="text-base font-bold text-white">Sefer Çam</h2>
+                                    <p class="text-xs font-semibold text-amber-400 tracking-wider">0531 864 24 95</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <a href="tel:+905318642495" class="w-9 h-9 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center hover:bg-amber-400 transition-colors" title="Sefer Çam'ı Ara">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                                <a href="https://wa.me/905318642495?text=Merhaba%20Sefer%20Usta%2C%20hizmetleriniz%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-500 transition-colors" title="WhatsApp Mesaj Gönder">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white"><i class="fa-solid fa-certificate"></i></div>
-                            Malzeme Marka Listesi
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white"><i class="fa-solid fa-temperature-low"></i></div>
-                            TS 825 Isı Yalıtım Raporu
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white"><i class="fa-solid fa-ruler-horizontal"></i></div>
-                            Net/Brüt m² Tabloları
+
+                        <!-- Serdar Ertubç Card -->
+                        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-amber-500/50 transition-all flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl font-bold border border-blue-500/30">
+                                    <i class="fa-solid fa-user-shield"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Teknik Destek & Keşif</p>
+                                    <h2 class="text-base font-bold text-white">Serdar Ertubç</h2>
+                                    <p class="text-xs font-semibold text-blue-400 tracking-wider">0536 617 62 60</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <a href="tel:+905366176260" class="w-9 h-9 rounded-lg bg-blue-500 text-slate-950 flex items-center justify-center hover:bg-blue-400 transition-colors" title="Serdar Ertubç'u Ara">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                                <a href="https://wa.me/905366176260?text=Merhaba%20Serdar%20Bey%2C%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20ve%20ke%C5%9Fif%20talebinde%20bulunmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-500 transition-colors" title="WhatsApp Mesaj Gönder">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Call To Action Row -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#hesaplayici" class="px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-base shadow-xl shadow-amber-500/25 flex items-center gap-3 transition-all hover:-translate-y-1">
+                            <span>Hemen Fiyat & Keşif İste</span>
+                            <i class="fa-solid fa-calculator text-slate-900"></i>
+                        </a>
+                        <a href="tel:+905318642495" class="px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 font-bold text-base flex items-center gap-3 transition-all hover:-translate-y-1">
+                            <i class="fa-solid fa-phone-volume text-amber-400 animate-pulse"></i>
+                            <span>Acil Servis Çağır</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-video text-amber-400"></i>
+                            <span>Kameralı Görüntüleme</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-fire-extinguisher text-amber-400"></i>
+                            <span>Yangın Güvenliği Standardı</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                            <span>Sıfır Kırma & Kesin Çözüm</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-leaf text-emerald-400"></i>
+                            <span>Ekolojik Bahçe Bakımı</span>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="lg:w-1/2 flex flex-col md:flex-row items-center gap-6 relative">
-                    
-                    <div class="hidden md:block absolute -left-20 top-1/2 -translate-y-1/2 z-20 w-48 animate-float drop-shadow-2xl grayscale hover:grayscale-0 transition-all duration-500">
-                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" class="rounded-lg shadow-[20px_20px_60px_rgba(0,0,0,0.5)] border-l-4 border-white/50 rotate-y-12 transform perspective-1000" alt="Katalog Kapak">
-                        <div class="absolute bottom-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">PDF</div>
-                    </div>
-
-                    <div class="bg-white p-8 md:pl-24 rounded-3xl shadow-2xl w-full max-w-md relative z-10 border border-white/50">
-                        <div class="absolute -top-6 -right-6 bg-slate-900 text-amber-400 w-20 h-20 rounded-full flex flex-col items-center justify-center font-bold text-center text-xs shadow-xl rotate-12 border-4 border-amber-500">
-                            <i class="fa-solid fa-download text-2xl mb-1"></i>
-                            ÜCRETSİZ
-                        </div>
+                <!-- Right Hero Visual Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl p-6 space-y-6">
                         
-                        <div id="katalogFormu">
-                            <h4 class="text-2xl font-serif font-black text-slate-900 mb-2">Dosyayı Şimdi İncele</h4>
-                            <p class="text-slate-500 text-sm mb-6">Mühendislik dosyasını indirmek için lütfen formu doldurun.</p>
-                            
-                            <form class="space-y-4" onsubmit="katalogTalep(event)">
-                                <div class="relative group">
-                                    <i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-amber-500 transition-colors"></i>
-                                    <input required type="text" placeholder="Adınız Soyadınız" class="w-full bg-slate-50 border border-slate-200 p-4 pl-12 rounded-xl focus:outline-none focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 transition-all font-medium text-slate-800">
-                                </div>
-                                
-                                <div class="relative group">
-                                    <i class="fa-solid fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-amber-500 transition-colors"></i>
-                                    <input required type="tel" placeholder="Telefon Numaranız (05...)" class="w-full bg-slate-50 border border-slate-200 p-4 pl-12 rounded-xl focus:outline-none focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 transition-all font-medium text-slate-800">
-                                </div>
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <div>
+                                <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Hızlı Müdahale Merkezi</span>
+                                <h2 class="text-xl font-bold text-white">VENİ Altyapı Çözümleri</h2>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Ekipler Sahada
+                            </span>
+                        </div>
 
-                                <div class="relative group">
-                                    <i class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-amber-500 transition-colors"></i>
-                                    <input required type="email" placeholder="E-Posta Adresiniz" class="w-full bg-slate-50 border border-slate-200 p-4 pl-12 rounded-xl focus:outline-none focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 transition-all font-medium text-slate-800">
+                        <!-- 4 Pillars Interactive Preview -->
+                        <div class="space-y-3">
+                            <a href="#kanal" class="block p-3.5 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-amber-500/40 transition-all group">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg border border-amber-500/20 shrink-0">
+                                        <i class="fa-solid fa-faucet-drip"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 class="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">Kanal & Gider Tıkanıklığı Açma</h3>
+                                            <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:translate-x-1 transition-transform"></i>
+                                        </div>
+                                        <p class="text-xs text-slate-400 mt-0.5">Yüksek basınçlı su jeti & robotik helezon yay ile kırmadan açma.</p>
+                                    </div>
                                 </div>
+                            </a>
 
-                                <div class="relative group">
-                                    <i class="fa-solid fa-compass-drafting absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-amber-500 transition-colors"></i>
-                                    <select class="w-full bg-slate-50 border border-slate-200 p-4 pl-12 rounded-xl focus:outline-none focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 transition-all font-medium text-slate-600 appearance-none cursor-pointer">
-                                        <option disabled selected>İlgilendiğiniz Yapı Tipi?</option>
-                                        <option>Tiny House (Tekerlekli)</option>
-                                        <option>Müstakil Villa (Sabit)</option>
-                                        <option>Ticari / Ofis Yapısı</option>
-                                        <option>Sadece Bilgi Almak İstiyorum</option>
-                                    </select>
-                                    <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+                            <a href="#kanal" class="block p-3.5 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-amber-500/40 transition-all group">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center text-lg border border-orange-500/20 shrink-0">
+                                        <i class="fa-solid fa-smog"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 class="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">Baca Temizliği & Kurum Arındırma</h3>
+                                            <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:translate-x-1 transition-transform"></i>
+                                        </div>
+                                        <p class="text-xs text-slate-400 mt-0.5">Restoran, fırın, fabrika ve bina kazan dairesi baca temizliği.</p>
+                                    </div>
                                 </div>
+                            </a>
 
-                                <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition-all shadow-xl hover:-translate-y-1 overflow-hidden relative group">
-                                    <span class="relative z-10 flex items-center justify-center gap-2">
-                                        Mühendislik Dosyasını Gönder <i class="fa-solid fa-file-export group-hover:translate-x-1 transition-transform text-amber-400"></i>
-                                    </span>
-                                    <div class="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-slate-800/50"></div>
-                                </button>
-                                
-                                <p class="text-[10px] text-center text-slate-400 mt-2">
-                                    <i class="fa-solid fa-lock"></i> Kişisel verileriniz <span onclick="openModal('kvkkModal')" class="underline cursor-pointer hover:text-amber-500 transition-colors">KVKK Aydınlatma Metni</span> uyarınca korunmaktadır.
-                                </p>
-                            </form>
-                            
-                            <div class="mt-6 flex items-center justify-center gap-4 border-t border-slate-100 pt-4">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="h-6 opacity-30" alt="Platformlar">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="h-6 opacity-30" alt="Platformlar">
-                                <span class="text-xs text-slate-400 font-semibold">Tüm Cihazlarla Uyumlu</span>
+                            <a href="#havalandirma" class="block p-3.5 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-blue-500/40 transition-all group">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg border border-blue-500/20 shrink-0">
+                                        <i class="fa-solid fa-wind"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors">Havalandırma Kanalı & Davlumbaz</h3>
+                                            <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:translate-x-1 transition-transform"></i>
+                                        </div>
+                                        <p class="text-xs text-slate-400 mt-0.5">Endüstriyel mutfak egzoz kanalları, spiro kanallar ve hijyen dezenfeksiyonu.</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#bahce" class="block p-3.5 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-emerald-500/40 transition-all group">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg border border-emerald-500/20 shrink-0">
+                                        <i class="fa-solid fa-seedling"></i>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Bahçe Bakım, Budama & Temizlik</h3>
+                                            <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:translate-x-1 transition-transform"></i>
+                                        </div>
+                                        <p class="text-xs text-slate-400 mt-0.5">Çim biçme, ağaç budama, yabani ot temizliği ve peyzaj atığı tahliyesi.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Direct Call Banner in Card -->
+                        <div class="bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-4 text-slate-950 flex items-center justify-between">
+                            <div>
+                                <p class="text-[11px] font-black uppercase tracking-wider">Hemen Ustayı Arayın</p>
+                                <p class="text-lg font-extrabold leading-none mt-0.5">Sefer Çam</p>
+                                <p class="text-xs font-bold text-slate-900/80">0531 864 24 95</p>
+                            </div>
+                            <a href="tel:+905318642495" class="px-4 py-2.5 rounded-xl bg-slate-950 text-amber-400 font-bold text-xs uppercase tracking-wider shadow-lg hover:bg-slate-900 transition-colors">
+                                <i class="fa-solid fa-phone mr-1"></i> Ara
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Anchor Section -->
+    <section id="hizmetler" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400">FAALİYET ALANLARIMIZ</span>
+                <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white">
+                    Eksiksiz Altyapı, Mekanik Temizlik ve Çevre Hizmetleri
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    VENİ Altyapı Tamirat olarak konutlardan fabrikalara, AVM'lerden restoranlara kadar tüm bina ve tesis altyapılarında yüksek standartlarda hizmet veriyoruz.
+                </p>
+            </div>
+
+            <!-- Service Pillars Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Kanal ve Baca Temizliği -->
+                <div id="kanal" class="bg-slate-950 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between hover:border-amber-500/50 transition-all group">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-3xl border border-amber-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-water-ladder"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Kanalizasyon & Yangın Emniyeti</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Kanal ve Baca Temizliği</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Logar tıkanıklıkları, yağ tutucular, mutfak ve ana atık su hatları kameralı cihazlarla tespit edilip yüksek basınçlı yıkama ile temizlenir. Restoran ve bina bacalarında biriken katran ve kurum yangın riskini önleyecek şekilde vakumlu sistemle arındırılır.
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-slate-300 font-medium border-t border-slate-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Kameralı robotik hat inceleme & tıkanıklık tespiti</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Yüksek debili hidro-jet basınçlı kanal yıkama</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Döner telli baca fırçalama & sanayi kazanı temizliği</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> İtfaiye yangın yönetmeliğine uygun baca bakımı</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-8 border-t border-slate-800 mt-6 flex items-center justify-between">
+                        <button onclick="requestSpecificQuote('Kanal ve Baca Temizliği')" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-2">
+                            <span>Bu Hizmet İçin Fiyat Al</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="tel:+905318642495" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-amber-400" title="Doğrudan Ara">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Havalandırma Kanalı Temizliği -->
+                <div id="havalandirma" class="bg-slate-950 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between hover:border-blue-500/50 transition-all group">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-3xl border border-blue-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-fan"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Endüstriyel & Hijyenik Hava</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Havalandırma Kanalı Temizliği</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Restoran davlumbazları, otel ve AVM spiro hava kanalları zamanla aşırı yağ, toz ve mikrop barındırır. Özel fırçalı robotlarımız ve yağ çözücü köpük sistemlerimizle kanalların içini ilk günkü parlaklığına ve güvenliğine getiriyoruz.
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-slate-300 font-medium border-t border-slate-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Restoran davlumbaz & yağlı kanal içi köpüklü yıkama</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Fabrika ve bina hava sirkülasyon kanalı dezenfeksiyonu</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Menfez, santral filtresi ve fan motoru temizliği</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Kötü koku ve yangın yayılma tehlikesinin önlenmesi</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-8 border-t border-slate-800 mt-6 flex items-center justify-between">
+                        <button onclick="requestSpecificQuote('Havalandırma Kanalı Temizliği')" class="text-xs font-bold text-blue-400 hover:text-blue-300 flex items-center gap-2">
+                            <span>Bu Hizmet İçin Fiyat Al</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="tel:+905366176260" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-blue-400" title="Doğrudan Ara">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Bahçe Bakım & Temizleme -->
+                <div id="bahce" class="bg-slate-950 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition-all group">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-3xl border border-emerald-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Peyzaj & Çevre Düzeni</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Bahçe Bakım & Temizleme</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Villa bahçeleri, site ortak alanları, fabrika çevreleri ve boş arazilerin profesyonel temizliği, mevsimlik budaması ve bakımı. Çimlerin biçilmesi, yabani otların ayıklanması, budanan dalların ve moloz atıklarının çevreye zarar vermeden taşınması.
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-slate-300 font-medium border-t border-slate-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Profesyonel çim biçme, havalandırma ve gübreleme</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Ağaç ve çit budama, tehlikeli dalların temizlenmesi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Yabani ot temizliği, ilaçlama ve toprak ıslahı</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Budanan atıkların ve çöplerin araçla tahliyesi</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-8 border-t border-slate-800 mt-6 flex items-center justify-between">
+                        <button onclick="requestSpecificQuote('Bahçe Bakım & Temizleme')" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-2">
+                            <span>Bu Hizmet İçin Fiyat Al</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="tel:+905318642495" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-emerald-400" title="Doğrudan Ara">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose VENİ & Equipment Showcase -->
+    <section class="py-24 bg-slate-950 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Left: Why Us -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-xs uppercase font-bold text-amber-400 tracking-widest">NEDEN VENİ ALTYAPI TAMİRAT?</span>
+                        <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white mt-2 leading-tight">
+                            Klasik Tesisatçı Değil, <br>
+                            <span class="text-amber-400">Teknik Altyapı Uzmanıyız.</span>
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Evlerde, sitelerde veya sanayi işletmelerinde yaşanan kanal tıkanmaları ve kirli bacalar amatör yöntemlerle çözüldüğünde daha büyük maliyet ve yangın riskleri doğurur. VENİ Altyapı Tamirat olarak ileri teknoloji ekipmanlarımız ve işinin ehli ustalarımızla kalıcı çözümler üretiyoruz.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">Noktasal Arıza & Tıkanıklık Tespiti</h3>
+                                <p class="text-xs text-slate-400 mt-1">Boruları veya zeminleri kırmadan, kanal içi kameralarımızla tıkanıklığın tam yerini ve sebebini ekran üzerinde görüp müdahale ediyoruz.</p>
                             </div>
                         </div>
 
-                        <div id="katalogBasarili" class="hidden text-center py-10">
-                            <div class="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-4xl shadow-inner animate-pulse"><i class="fa-solid fa-check"></i></div>
-                            <h4 class="text-2xl font-bold text-slate-900 mb-2">Erişim İzni Verildi!</h4>
-                            <p class="text-slate-600 font-medium">Katalog tarayıcınızda açılıyor...</p>
+                        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">Dakikalar İçinde Hızlı Servis</h3>
+                                <p class="text-xs text-slate-400 mt-1">Acil su baskını, kanal taşması veya işletme mutfağının durması gibi acil durumlarda Sefer Çam ve Serdar Ertubç yönetimindeki ekiplerimiz hemen yola çıkar.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-file-shield"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-base font-bold text-white">Ruhsat & Yangın Standartlarına Uygunluk</h3>
+                                <p class="text-xs text-slate-400 mt-1">Restoran, fırın ve endüstriyel tesisler için itfaiye ve belediye denetimlerinden tam not alacak standartta temizlik ve periyodik raporlama.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right: Comparison Table -->
+                <div class="rounded-3xl bg-slate-900 border border-slate-800 p-6 sm:p-8 shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-scale-balanced text-amber-400"></i>
+                        <span>Geleneksel Yöntemler vs. VENİ Altyapı</span>
+                    </h3>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs sm:text-sm">
+                            <thead>
+                                <tr class="border-b border-slate-800 text-slate-400">
+                                    <th class="pb-3 font-semibold">Kriter</th>
+                                    <th class="pb-3 font-semibold text-slate-500">Klasik Yöntemler</th>
+                                    <th class="pb-3 font-bold text-amber-400">VENİ Altyapı</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-800/60">
+                                <tr>
+                                    <td class="py-3.5 font-medium text-slate-200">Kanal Açma Yaklaşımı</td>
+                                    <td class="py-3.5 text-slate-400"><i class="fa-solid fa-xmark text-red-500 mr-1.5"></i> Fayans ve boru kırma</td>
+                                    <td class="py-3.5 font-bold text-amber-400"><i class="fa-solid fa-check text-green-400 mr-1.5"></i> Robotla sıfır kırma</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3.5 font-medium text-slate-200">Baca Temizlik Güvenliği</td>
+                                    <td class="py-3.5 text-slate-400"><i class="fa-solid fa-xmark text-red-500 mr-1.5"></i> Yüzeysel süpürme</td>
+                                    <td class="py-3.5 font-bold text-amber-400"><i class="fa-solid fa-check text-green-400 mr-1.5"></i> Kimyasal & mekanik kurum arındırma</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3.5 font-medium text-slate-200">Havalandırma Hijyeni</td>
+                                    <td class="py-3.5 text-slate-400"><i class="fa-solid fa-xmark text-red-500 mr-1.5"></i> Sadece menfez silme</td>
+                                    <td class="py-3.5 font-bold text-amber-400"><i class="fa-solid fa-check text-green-400 mr-1.5"></i> Kanal boyu derin robotik temizlik</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3.5 font-medium text-slate-200">Bahçe Atık Tahliyesi</td>
+                                    <td class="py-3.5 text-slate-400"><i class="fa-solid fa-xmark text-red-500 mr-1.5"></i> Atıkları ortada bırakma</td>
+                                    <td class="py-3.5 font-bold text-amber-400"><i class="fa-solid fa-check text-green-400 mr-1.5"></i> Araçla tertemiz nakliye</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3.5 font-medium text-slate-200">İletişim & Sorumluluk</td>
+                                    <td class="py-3.5 text-slate-400"><i class="fa-solid fa-xmark text-red-500 mr-1.5"></i> Ulaşılması zor aracılar</td>
+                                    <td class="py-3.5 font-bold text-amber-400"><i class="fa-solid fa-check text-green-400 mr-1.5"></i> Sefer Çam & Serdar Ertubç doğrudan hatta</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Direct Hotline Card inside Comparison -->
+                    <div class="mt-8 p-4 rounded-2xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="text-center sm:text-left">
+                            <p class="text-xs text-slate-400">Acil keşif veya randevu için:</p>
+                            <p class="text-sm font-bold text-white">Doğrudan saha ustalarımızla görüşün</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <a href="tel:+905318642495" class="px-3 py-2 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 transition-colors">
+                                Sefer Çam: 0531 864 24 95
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="mevzuat" class="py-24 bg-gray-50 border-t border-gray-200">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="text-center mb-16">
-                <h2 class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-3">YASAL UYARILAR</h2>
-                <h3 class="text-4xl font-serif font-black text-slate-900">Doğru Bilinen Yanlışlar</h3>
-                <p class="text-slate-600 mt-4">Sizi sadece ev sahibi yapmıyoruz, yasal cezalardan da koruyoruz.</p>
+    <!-- Interactive Cost / Inspection Request Calculator Form -->
+    <section id="hesaplayici" class="py-24 bg-slate-900 border-t border-slate-800 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-xs uppercase font-bold text-amber-400 tracking-widest">HIZLI KEŞİF & FİYAT FORMU</span>
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white">
+                    İhtiyacınızı Belirleyin, Anında Teklif Alın
+                </h2>
+                <p class="text-slate-400 text-sm">
+                    Aşağıdaki formu doldurarak ihtiyacınızı iletin; Sefer Çam veya Serdar Ertubç size dakikalar içinde en uygun fiyat ve çözüm planıyla dönüş yapsın.
+                </p>
             </div>
 
-            <div class="space-y-4" id="faq-container">
-                <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden cursor-pointer faq-item" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 bg-white hover:bg-slate-50 transition-colors">
-                        <h4 class="font-bold text-lg text-slate-800"><i class="fa-solid fa-scale-balanced mr-2 text-amber-500"></i> Tiny House tarlaya konur mu?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
-                    </div>
-                    <div class="faq-content bg-slate-50 px-6 text-slate-600 text-sm leading-relaxed">
-                        <p class="mb-2"><strong>DİKKAT:</strong> Tiny House, İmar Kanunu'na göre bir "bina" değil, Karayolları Yönetmeliği'ne göre bir "araç"tır (O2 Sınıfı Römork).</p>
-                        <p>Plakalı ve ruhsatlı olduğu sürece tarlanıza park edebilirsiniz. ANCAK; tekerlekleri söküp yere sabitlerseniz, su basmanı (beton) dökerseniz "Yapı" statüsüne geçer ve kaçak yapı cezası alırsınız.</p>
-                        <div class="h-4"></div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden cursor-pointer faq-item" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 bg-white hover:bg-slate-50 transition-colors">
-                        <h4 class="font-bold text-lg text-slate-800"><i class="fa-solid fa-file-contract mr-2 text-amber-500"></i> Prefabrik ev için ruhsat gerekir mi?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
-                    </div>
-                    <div class="faq-content bg-slate-50 px-6 text-slate-600 text-sm leading-relaxed">
-                        <p class="mb-2"><strong>EVET, KESİNLİKLE GEREKİR.</strong></p>
-                        <p>"Prefabrik ruhsatsız yapılır" diyenlere inanmayın. Prefabrik evler de betonarme binalar gibi 3194 sayılı İmar Kanunu'na tabidir. Belediyeden yapı ruhsatı almadan kurulamaz.</p>
-                        <div class="h-4"></div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden cursor-pointer faq-item" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 bg-white hover:bg-slate-50 transition-colors">
-                        <h4 class="font-bold text-lg text-slate-800"><i class="fa-solid fa-temperature-arrow-down mr-2 text-amber-500"></i> Duvarlarda terleme olur mu?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
-                    </div>
-                    <div class="faq-content bg-slate-50 px-6 text-slate-600 text-sm leading-relaxed">
-                        <p>Standart sandviç panellerde olur, ancak <strong>VENI Sisteminde OLMAZ.</strong> Çünkü biz duvarlarımızda "Nem Bariyeri" ve "Buhar Kesici Örtü" kullanıyoruz. Evlerimiz nefes alır.</p>
-                        <div class="h-4"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="surec" class="py-32 bg-slate-50 relative border-t border-slate-200 overflow-hidden">
-         <div class="absolute inset-0 opacity-[0.03] pointer-events-none text-slate-900 flex justify-center items-center overflow-hidden">
-            <i class="fa-solid fa-diagram-project text-[50rem]"></i>
-        </div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-24">
-                <h2 class="text-amber-500 font-bold tracking-[0.2em] uppercase text-sm mb-4">VENI YOL HARİTASI</h2>
-                <h3 class="text-5xl md:text-6xl font-serif font-black text-slate-900">
-                    Anahtara Giden <span class="italic text-amber-500">4 Adım</span>
-                </h3>
-            </div>
-            <div class="relative">
-                <div class="hidden md:block absolute top-16 left-0 w-full h-0.5 border-t-4 border-dotted border-slate-300 z-0"></div>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-16">
-                    <div class="relative z-10 text-center group">
-                        <div class="w-32 h-32 mx-auto bg-white border-[6px] border-slate-200 rounded-full flex items-center justify-center text-4xl text-slate-400 mb-8 group-hover:border-amber-400 group-hover:text-amber-500 transition-all duration-500 shadow-2xl group-hover:-translate-y-2"><i class="fa-solid fa-pen-ruler"></i></div>
-                        <h4 class="text-2xl font-serif font-bold text-slate-900 mb-4">1. Keşif & Tasarım</h4>
-                        <p class="text-base text-slate-600 font-medium leading-relaxed px-4">Arsanızı inceler, hayalinizdeki yapıyı 3D modelleriz.</p>
-                        <span class="absolute -top-10 left-1/2 -translate-x-1/2 text-8xl font-black text-slate-200/50 -z-10 select-none font-serif">01</span>
-                    </div>
-                    <div class="relative z-10 text-center group">
-                        <div class="w-32 h-32 mx-auto bg-white border-[6px] border-slate-200 rounded-full flex items-center justify-center text-4xl text-slate-400 mb-8 group-hover:border-amber-400 group-hover:text-amber-500 transition-all duration-500 shadow-2xl group-hover:-translate-y-2"><i class="fa-solid fa-industry"></i></div>
-                        <h4 class="text-2xl font-serif font-bold text-slate-900 mb-4">2. Fabrika Üretimi</h4>
-                        <p class="text-base text-slate-600 font-medium leading-relaxed px-4">Kapalı tesislerimizde milimetrik olarak üretilir.</p>
-                        <span class="absolute -top-10 left-1/2 -translate-x-1/2 text-8xl font-black text-slate-200/50 -z-10 select-none font-serif">02</span>
-                    </div>
-                    <div class="relative z-10 text-center group">
-                        <div class="w-32 h-32 mx-auto bg-white border-[6px] border-slate-200 rounded-full flex items-center justify-center text-4xl text-slate-400 mb-8 group-hover:border-amber-400 group-hover:text-amber-500 transition-all duration-500 shadow-2xl group-hover:-translate-y-2"><i class="fa-solid fa-truck-fast"></i></div>
-                        <h4 class="text-2xl font-serif font-bold text-slate-900 mb-4">3. Lojistik & Montaj</h4>
-                        <p class="text-base text-slate-600 font-medium leading-relaxed px-4">Uzman montaj ekibimiz yapıyı lego gibi birleştirir.</p>
-                        <span class="absolute -top-10 left-1/2 -translate-x-1/2 text-8xl font-black text-slate-200/50 -z-10 select-none font-serif">03</span>
-                    </div>
-                    <div class="relative z-10 text-center group">
-                        <div class="w-32 h-32 mx-auto bg-white border-[6px] border-amber-400 rounded-full flex items-center justify-center text-4xl text-amber-500 mb-8 group-hover:bg-amber-400 group-hover:text-slate-900 transition-all duration-500 shadow-2xl shadow-amber-200 group-hover:-translate-y-2"><i class="fa-solid fa-key"></i></div>
-                        <h4 class="text-2xl font-serif font-bold text-slate-900 mb-4">4. Anahtar Teslim</h4>
-                        <p class="text-base text-slate-600 font-medium leading-relaxed px-4">Son kontroller yapılır ve anahtarınız teslim edilir.</p>
-                        <span class="absolute -top-10 left-1/2 -translate-x-1/2 text-8xl font-black text-amber-200/50 -z-10 select-none font-serif">04</span>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-24 relative z-20" id="iletisim">
-                <button onclick="openModal('offerModal')" class="inline-flex items-center gap-4 bg-slate-900 text-white px-12 py-6 rounded-2xl font-bold text-lg hover:bg-slate-800 transition-all shadow-2xl hover:-translate-y-2 group">
-                    <i class="fa-solid fa-calendar-check text-amber-400 text-2xl group-hover:animate-bounce"></i>
-                    Ücretsiz Keşif Randevusu Al
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <div class="w-full h-[400px] bg-slate-900 relative border-t border-slate-800">
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-2xl text-center max-w-sm hidden md:block border border-white/50">
-            <i class="fa-solid fa-location-dot text-4xl text-amber-500 mb-4 animate-bounce"></i>
-            <h4 class="text-xl font-bold text-slate-900 mb-2">VENI Deneyim Merkezi</h4>
-            <p class="text-slate-600 text-sm mb-4">Örnek villalarımızı canlı görmek için kahveye bekleriz.</p>
-            <a href="https://goo.gl/maps/xyz" target="_blank" class="text-amber-600 font-bold hover:underline text-sm">Yol Tarifi Al →</a>
-        </div>
-        
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.204065678904!2d29.01509631564769!3d41.06456797929532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6130b0b0b0b%3A0x0!2zNDHCsDAzJzUyLjQiTiAyOSswMCc1OC4zIkU!5e0!3m2!1sen!2str!4v1620000000000!5m2!1sen!2str"
-            width="100%" 
-            height="100%" 
-            style="border:0; filter: grayscale(100%) contrast(1.2) invert(90%) hue-rotate(180deg);" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-
-    <footer class="bg-slate-950 text-slate-400 py-24 border-t border-slate-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-[0.02] pointer-events-none flex justify-center items-center">
-            <i class="fa-solid fa-compass-drafting text-[40rem]"></i>
-        </div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16 text-center md:text-left">
-                <div class="flex flex-col items-center md:items-start col-span-1 md:col-span-2">
-                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-14 h-14 border-2 border-amber-400 rounded-xl flex items-center justify-center text-amber-400 text-2xl">
-                            <i class="fa-solid fa-compass-drafting"></i>
-                        </div>
-                        <div class="flex flex-col leading-none">
-                            <h2 class="text-3xl font-serif font-black text-white tracking-wider">VENI</h2>
-                            <span class="text-amber-400 text-xs font-bold tracking-[0.3em] uppercase">PREFABRİK</span>
-                        </div>
-                    </div>
-                    <p class="text-base leading-relaxed max-w-md mb-8">
-                        Geleceğin yaşam alanlarını, bugünün mühendislik dehası ve estetik anlayışıyla inşa ediyoruz.
-                    </p>
+            <div class="bg-slate-950 rounded-3xl border border-slate-800 p-6 sm:p-10 shadow-2xl">
+                <form id="serviceForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
                     
-                    <div class="flex gap-6 mt-8">
-                        <a href="https://urlgeni.us/instagram/veniprefabrik" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
-                            <i class="fa-brands fa-instagram text-2xl group-hover:text-white transition-colors"></i>
-                        </a>
+                    <!-- Hizmet Türü Seçimi -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">1. Hangi Hizmete İhtiyacınız Var? *</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="cursor-pointer p-4 rounded-xl border border-slate-800 bg-slate-900/60 hover:border-amber-500/50 has-[:checked]:border-amber-500 has-[:checked]:bg-amber-500/10 transition-all flex items-center gap-3">
+                                <input type="radio" name="hizmet" value="Kanal ve Baca Temizliği" required class="accent-amber-500" checked>
+                                <div>
+                                    <p class="text-sm font-bold text-white">Kanal & Baca Temizliği</p>
+                                    <p class="text-xs text-slate-400">Tıkanıklık açma, baca kurum</p>
+                                </div>
+                            </label>
 
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-[#1877F2] hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
-                            <i class="fa-brands fa-facebook-f text-2xl group-hover:text-white transition-colors"></i>
-                        </a>
+                            <label class="cursor-pointer p-4 rounded-xl border border-slate-800 bg-slate-900/60 hover:border-blue-500/50 has-[:checked]:border-blue-500 has-[:checked]:bg-blue-500/10 transition-all flex items-center gap-3">
+                                <input type="radio" name="hizmet" value="Havalandırma Kanalı Temizliği" class="accent-blue-500">
+                                <div>
+                                    <p class="text-sm font-bold text-white">Havalandırma Kanalı</p>
+                                    <p class="text-xs text-slate-400">Davlumbaz, hava kanalları</p>
+                                </div>
+                            </label>
 
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-[#FF0000] hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
-                            <i class="fa-brands fa-youtube text-2xl group-hover:text-white transition-colors"></i>
-                        </a>
+                            <label class="cursor-pointer p-4 rounded-xl border border-slate-800 bg-slate-900/60 hover:border-emerald-500/50 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-500/10 transition-all flex items-center gap-3">
+                                <input type="radio" name="hizmet" value="Bahçe Bakım & Temizleme" class="accent-emerald-500">
+                                <div>
+                                    <p class="text-sm font-bold text-white">Bahçe Bakım & Temizleme</p>
+                                    <p class="text-xs text-slate-400">Çim, budama, atık tahliyesi</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
 
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-[#0A66C2] hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
-                            <i class="fa-brands fa-linkedin-in text-2xl group-hover:text-white transition-colors"></i>
-                        </a>
+                    <!-- Mekan Tipi ve Aciliyet -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Mekan / Tesis Tipi *</label>
+                            <select id="mekanTipi" required class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-amber-400">
+                                <option value="Daire / Konut">Daire / Konut</option>
+                                <option value="Müstakil Ev / Villa">Müstakil Ev / Villa</option>
+                                <option value="Restoran / Kafe / Lokanta">Restoran / Kafe / Lokanta</option>
+                                <option value="Fabrika / Atölye / Sanayi">Fabrika / Atölye / Sanayi</option>
+                                <option value="Site / Apartman Yönetimi">Site / Apartman Yönetimi</option>
+                                <option value="Otel / AVM / Plaza">Otel / AVM / Plaza</option>
+                                <option value="Açık Alan / Boş Arazi">Açık Alan / Boş Arazi</option>
+                            </select>
+                        </div>
 
-                        <a href="https://wa.me/905553137021" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-white hover:bg-[#25D366] hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg group">
-                            <i class="fa-brands fa-whatsapp text-2xl group-hover:text-white transition-colors"></i>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Aciliyet Durumu *</label>
+                            <select id="aciliyet" required class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-amber-400">
+                                <option value="ACİL - Bugün İçinde Müdahale">ACİL - Bugün İçinde Müdahale Gerekiyor</option>
+                                <option value="24-48 Saat İçinde Keşif">24-48 Saat İçinde Keşif İstiyorum</option>
+                                <option value="Hafta Sonu İçin Randevu">Hafta Sonu İçin Randevu</option>
+                                <option value="Periyodik / Düzenli Bakım Planı">Periyodik / Düzenli Bakım Planı</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- İletişim Bilgileri -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Adınız Soyadınız *</label>
+                            <input type="text" id="musteriAd" required placeholder="Örn: Ahmet Yılmaz" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-amber-400">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Telefon Numaranız *</label>
+                            <input type="tel" id="musteriTel" required placeholder="05XX XXX XX XX" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-amber-400">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Konum / İlçe *</label>
+                            <input type="text" id="musteriKonum" required placeholder="Örn: Kadıköy, Başakşehir vb." class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-amber-400">
+                        </div>
+                    </div>
+
+                    <!-- Detay Notu -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Sorunun Detayı / Yapılacak İş (İsteğe Bağlı)</label>
+                        <textarea id="musteriNot" rows="3" placeholder="Örn: Mutfak giderinden su geri basıyor veya 15 metrelik davlumbaz baca hattımız yağlandı..." class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-sm text-slate-200 focus:outline-none focus:border-amber-400"></textarea>
+                    </div>
+
+                    <!-- Gönderim Seçenekleri -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 items-center justify-between border-t border-slate-800">
+                        <div class="text-xs text-slate-400">
+                            <i class="fa-solid fa-lock mr-1 text-amber-400"></i> Bilgileriniz yalnızca keşif ve teklif amacıyla kullanılır.
+                        </div>
+
+                        <div class="flex flex-wrap gap-3 w-full sm:w-auto">
+                            <button type="submit" name="submitType" value="whatsapp_sefer" class="flex-1 sm:flex-none px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                                <i class="fa-brands fa-whatsapp text-base"></i> Sefer Çam'a WhatsApp'la Gönder
+                            </button>
+                            <button type="submit" name="submitType" value="whatsapp_serdar" class="flex-1 sm:flex-none px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                                <i class="fa-brands fa-whatsapp text-base"></i> Serdar Ertubç'a Gönder
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div id="formSuccess" class="hidden text-center py-8 space-y-4">
+                    <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Talebiniz Hazırlandı!</h3>
+                    <p class="text-slate-300 text-sm max-w-md mx-auto">
+                        Mesajınız oluşturuldu ve ilgili ustamıza iletiliyor. Acil durumlar için lütfen doğrudan telefonla arayınız.
+                    </p>
+                    <div class="pt-4 flex justify-center gap-4">
+                        <a href="tel:+905318642495" class="px-5 py-2.5 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs">
+                            <i class="fa-solid fa-phone mr-1.5"></i> Sefer Çam: 0531 864 24 95
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-col items-center md:items-start">
-                    <h3 class="text-white font-bold mb-8 uppercase tracking-[0.2em] text-sm border-b border-slate-800 pb-2">Hızlı Erişim</h3>
-                    <ul class="space-y-4 text-base font-medium">
-                        <li><a href="#" class="hover:text-amber-400 transition-colors">Hakkımızda</a></li>
-                        <li><a href="#teknoloji" class="hover:text-amber-400 transition-colors">Teknolojimiz</a></li>
-                        <li><a href="#galeri" class="hover:text-amber-400 transition-colors">Projeler</a></li>
-                        <li><a href="#iletisim" class="hover:text-amber-400 transition-colors">İletişim</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col items-center md:items-start">
-                    <h3 class="text-white font-bold mb-8 uppercase tracking-[0.2em] text-sm border-b border-slate-800 pb-2">Bize Ulaşın</h3>
-                     <ul class="space-y-6 text-base font-medium">
-                        <li class="flex items-start gap-4"><i class="fa-solid fa-phone text-amber-400 mt-1"></i> +90 (555) 313 70 21</li>
-                        <li class="flex items-start gap-4"><i class="fa-solid fa-envelope text-amber-400 mt-1"></i> veniprefabrik@gmail.com</li>
-                        <li class="flex items-start gap-4"><i class="fa-solid fa-location-dot text-amber-400 mt-1"></i> İstanbul, Türkiye</li>
-                    </ul>
-                </div>
+
             </div>
-            <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-medium">
-                <p>© 2026 VENI PREFABRİK A.Ş.</p>
+
+        </div>
+    </section>
+
+    <!-- Sıkça Sorulan Sorular (FAQ) Accordion -->
+    <section class="py-24 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16 space-y-3">
+                <span class="text-xs uppercase font-bold text-amber-400 tracking-widest">MERAK EDİLENLER</span>
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white">
+                    Sıkça Sorulan Sorular
+                </h2>
+                <p class="text-slate-400 text-sm">
+                    Kanalizasyon, baca ve havalandırma temizliği ile bahçe bakım süreçlerimiz hakkında en çok sorulan sorular.
+                </p>
+            </div>
+
+            <div class="space-y-4" id="faqAccordion">
+                
+                <div class="faq-item bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer p-6" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base font-bold text-white flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+                            <span>Tıkanan kanalı açarken evde ya da bahçede kırma işlemi yapılıyor mu?</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform"></i>
+                    </div>
+                    <div class="faq-content text-slate-400 text-sm leading-relaxed">
+                        Hayır. Gelişmiş robotik helezon yaylarımız ve kanal içi görüntüleme kameralarımız sayesinde boru hattına mevcut gider deliklerinden veya logar kapağından giriyoruz. Noktasal tespit yaparak sıfır kırma ile tıkanıklığı %100 açıyoruz.
+                    </div>
+                </div>
+
+                <div class="faq-item bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer p-6" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base font-bold text-white flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+                            <span>Restoran davlumbazı ve havalandırma kanalı ne sıklıkla temizlenmeli?</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform"></i>
+                    </div>
+                    <div class="faq-content text-slate-400 text-sm leading-relaxed">
+                        İtfaiye ve belediye yangın yönetmeliklerine göre yoğun çalışan mutfak ve restoranların havalandırma kanalları ve davlumbazları en az 3 ila 6 ayda bir profesyonel olarak temizlenmelidir. Temizlenmeyen yağlı kanallar küçük bir alev kıvılcımında çatıya kadar tüm binayı sarabilecek yangınlara sebep olabilir.
+                    </div>
+                </div>
+
+                <div class="faq-item bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer p-6" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base font-bold text-white flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+                            <span>Bahçe temizliği ve ağaç budaması sonrası atıklar ne yapılıyor?</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform"></i>
+                    </div>
+                    <div class="faq-content text-slate-400 text-sm leading-relaxed">
+                        Biçilen çimler, toplanan yabani otlar, budanan ağaç dalları ve molozlar bahçenizde kesinlikle bırakılmaz. Kendi nakliye araçlarımızla toplanır, çuvallanır ve yasal atık döküm sahalarına taşınarak alan pırıl pırıl teslim edilir.
+                    </div>
+                </div>
+
+                <div class="faq-item bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer p-6" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base font-bold text-white flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+                            <span>Acil durumlarda gece veya hafta sonu hizmet veriyor musunuz?</span>
+                        </h3>
+                        <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform"></i>
+                    </div>
+                    <div class="faq-content text-slate-400 text-sm leading-relaxed">
+                        Evet. Kanalizasyon taşması, logar patlaması, bodrum su basması gibi acil durumlarda Sefer Çam (0531 864 24 95) ve Serdar Ertubç (0536 617 62 60) telefon numaralarımız 7 gün 24 saat aktiftir. Hemen arayabilirsiniz.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="iletisim" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs uppercase font-bold text-amber-400 tracking-widest">BİZE ULAŞIN</span>
+                        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white mt-2">
+                            7/24 İletişim & Randevu
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Altyapı sorunlarınız, baca ve havalandırma temizlikleri veya bahçe bakım ihtiyaçlarınız için doğrudan ustalarımızla irtibata geçebilirsiniz.
+                        </p>
+                    </div>
+
+                    <!-- Direct Contact Cards -->
+                    <div class="space-y-4">
+                        
+                        <!-- Sefer Çam Direct Card -->
+                        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 hover:border-amber-500/50 transition-all space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold border border-amber-500/30">
+                                        <i class="fa-solid fa-wrench"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-white">Sefer Çam</h3>
+                                        <p class="text-xs text-slate-400">Altyapı & Kanalizasyon Saha Şefi</p>
+                                    </div>
+                                </div>
+                                <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-400 text-xs font-bold">7/24 Aktif</span>
+                            </div>
+
+                            <div class="flex items-center justify-between pt-2 border-t border-slate-800">
+                                <a href="tel:+905318642495" class="text-base font-bold text-white hover:text-amber-400 flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-amber-400"></i>
+                                    <span>+90 531 864 24 95</span>
+                                </a>
+                                <a href="https://wa.me/905318642495" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-1.5 transition-colors">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Serdar Ertubç Direct Card -->
+                        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 hover:border-blue-500/50 transition-all space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl font-bold border border-blue-500/30">
+                                        <i class="fa-solid fa-wind"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-white">Serdar Ertubç</h3>
+                                        <p class="text-xs text-slate-400">Havalandırma & Çevre Bakım Sorumlusu</p>
+                                    </div>
+                                </div>
+                                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 text-xs font-bold">7/24 Aktif</span>
+                            </div>
+
+                            <div class="flex items-center justify-between pt-2 border-t border-slate-800">
+                                <a href="tel:+905366176260" class="text-base font-bold text-white hover:text-blue-400 flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-blue-400"></i>
+                                    <span>+90 536 617 62 60</span>
+                                </a>
+                                <a href="https://wa.me/905366176260" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-1.5 transition-colors">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-400 space-y-2">
+                        <div class="flex items-center gap-2 text-slate-300 font-semibold">
+                            <i class="fa-solid fa-location-dot text-amber-400"></i>
+                            <span>Hizmet Bölgeleri:</span>
+                        </div>
+                        <p>İstanbul geneli (Anadolu & Avrupa Yakası) ve çevre illerde tüm konut, sanayi ve ticari işletmelere mobil servis araçlarımızla hizmet vermekteyiz.</p>
+                    </div>
+
+                </div>
+
+                <!-- Right Side: Fast Quick Message Panel -->
+                <div class="lg:col-span-7 bg-slate-950 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Hızlı Servis Talep Et</h3>
+                                <p class="text-xs text-slate-400 mt-1">Ustamızı doğrudan arayabilir veya WhatsApp üzerinden konum atabilirsiniz.</p>
+                            </div>
+                            <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href="tel:+905318642495" class="p-6 rounded-2xl bg-gradient-to-br from-amber-500/20 to-slate-900 border border-amber-500/30 hover:border-amber-400 transition-all flex flex-col justify-between group">
+                                <div class="space-y-2">
+                                    <i class="fa-solid fa-phone-volume text-3xl text-amber-400 group-hover:scale-110 transition-transform"></i>
+                                    <h4 class="text-lg font-bold text-white">Sefer Çam</h4>
+                                    <p class="text-xs text-slate-400">Kanal Tıkanıklığı & Acil Baca Temizliği İçin</p>
+                                </div>
+                                <div class="mt-6 flex items-center justify-between text-amber-400 font-bold text-sm">
+                                    <span>0531 864 24 95</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+
+                            <a href="tel:+905366176260" class="p-6 rounded-2xl bg-gradient-to-br from-blue-500/20 to-slate-900 border border-blue-500/30 hover:border-blue-400 transition-all flex flex-col justify-between group">
+                                <div class="space-y-2">
+                                    <i class="fa-solid fa-phone-volume text-3xl text-blue-400 group-hover:scale-110 transition-transform"></i>
+                                    <h4 class="text-lg font-bold text-white">Serdar Ertubç</h4>
+                                    <p class="text-xs text-slate-400">Havalandırma Kanalı & Bahçe Bakımı İçin</p>
+                                </div>
+                                <div class="mt-6 flex items-center justify-between text-blue-400 font-bold text-sm">
+                                    <span>0536 617 62 60</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-3">
+                            <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                                <span>WhatsApp ile Fotoğraf / Video Gönderin</span>
+                            </h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Tıkanan giderinizin, kirlenen baca veya havalandırma kanalınızın veya bahçenizin fotoğrafını çekip WhatsApp üzerinden gönderin; durumu hemen inceleyip net fiyat ve süre verelim.
+                            </p>
+                            <div class="flex flex-wrap gap-3 pt-2">
+                                <a href="https://wa.me/905318642495?text=Merhaba%2C%20i%C5%9Fin%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2">
+                                    <i class="fa-brands fa-whatsapp"></i> Sefer Çam'a Gönder
+                                </a>
+                                <a href="https://wa.me/905366176260?text=Merhaba%2C%20i%C5%9Fin%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2">
+                                    <i class="fa-brands fa-whatsapp"></i> Serdar Ertubç'a Gönder
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 mt-6 text-center text-xs text-slate-500">
+                        VENİ Altyapı Tamirat · Profesyonel Çözüm ve Garantili İşçilik
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <span class="text-xl font-display font-extrabold text-white">VENİ Altyapı Tamirat</span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                        Kanal açma, baca temizliği, endüstriyel havalandırma kanalları ve profesyonel bahçe bakım temizlik hizmetleri.
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        Yetkililer: Sefer Çam (0531 864 24 95) · Serdar Ertubç (0536 617 62 60)
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h5 class="text-white font-bold text-xs uppercase tracking-wider">Hizmetlerimiz</h5>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#kanal" class="hover:text-amber-400 transition-colors">Kanal & Logar Tıkanıklığı Açma</a></li>
+                        <li><a href="#kanal" class="hover:text-amber-400 transition-colors">Baca Temizliği & Kurum Arındırma</a></li>
+                        <li><a href="#havalandirma" class="hover:text-amber-400 transition-colors">Havalandırma Kanalı Temizliği</a></li>
+                        <li><a href="#bahce" class="hover:text-amber-400 transition-colors">Bahçe Bakım & Temizleme</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <h5 class="text-white font-bold text-xs uppercase tracking-wider">Acil Telefonlar</h5>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="tel:+905318642495" class="hover:text-amber-400 font-bold transition-colors">Sefer Çam: 0531 864 24 95</a></li>
+                        <li><a href="tel:+905366176260" class="hover:text-amber-400 font-bold transition-colors">Serdar Ertubç: 0536 617 62 60</a></li>
+                        <li class="text-slate-500 text-[11px] pt-1">Haftanın 7 günü 24 saat kesintisiz servis</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>© 2026 VENİ Altyapı Tamirat. Tüm hakları saklıdır.</p>
+                <div class="flex gap-4">
+                    <span>Kanal & Baca</span>
+                    <span>·</span>
+                    <span>Havalandırma</span>
+                    <span>·</span>
+                    <span>Bahçe Bakımı</span>
+                </div>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/905553137021" target="_blank" class="hidden md:flex fixed bottom-8 right-8 z-40 bg-green-500 text-white w-16 h-16 rounded-full items-center justify-center text-3xl shadow-2xl hover:bg-green-600 transition-all hover:-translate-y-2 animate-pulse-slow border-4 border-white">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 p-3 z-50 flex md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.1)]">
-        <a href="tel:+905553137021" class="flex-1 bg-slate-900 text-white flex flex-col items-center justify-center rounded-l-xl py-2 active:bg-slate-800">
-            <i class="fa-solid fa-phone text-amber-400 mb-1"></i>
-            <span class="text-xs font-bold">Hemen Ara</span>
+    <!-- Fixed Floating Sticky Mobile Bottom Action Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 p-2.5 flex md:hidden gap-2 shadow-2xl">
+        <a href="tel:+905318642495" class="flex-1 py-3 px-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 shadow-lg active:scale-95 transition-all text-center">
+            <i class="fa-solid fa-phone text-sm"></i>
+            <span class="leading-tight">Sefer Çam<br><span class="text-[10px] font-semibold">0531 864 24 95</span></span>
         </a>
-        <a href="https://wa.me/905553137021" class="flex-1 bg-green-500 text-white flex flex-col items-center justify-center rounded-r-xl py-2 active:bg-green-600">
-            <i class="fa-brands fa-whatsapp text-white mb-1"></i>
-            <span class="text-xs font-bold">WhatsApp</span>
+        <a href="tel:+905366176260" class="flex-1 py-3 px-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-lg active:scale-95 transition-all text-center">
+            <i class="fa-solid fa-phone text-sm"></i>
+            <span class="leading-tight">Serdar Ertubç<br><span class="text-[10px] font-semibold">0536 617 62 60</span></span>
+        </a>
+        <a href="https://wa.me/905318642495" target="_blank" rel="noopener noreferrer" class="w-12 h-auto rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0 active:scale-95 shadow-lg">
+            <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
 
-    <div id="offerModal" class="modal fixed inset-0 z-[60] flex items-center justify-center bg-slate-900/80 backdrop-blur-md p-4">
-        <div class="modal-content bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden relative flex flex-col md:flex-row">
-            <button onclick="closeModal('offerModal')" class="absolute top-4 right-4 w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-red-500 hover:text-white transition-colors z-20">
+    <!-- Quick Modal for Instant Quote Request -->
+    <div id="quickModal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+        <div class="modal-card bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 max-w-lg w-full relative shadow-2xl">
+            <button onclick="closeModal('quickModal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-sm transition-colors">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             
-            <div class="bg-slate-900 p-8 text-white flex flex-col justify-between relative overflow-hidden md:w-5/12">
-                <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')] bg-cover bg-center"></div>
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-serif font-bold mb-2">Maliyet Hesapla</h3>
-                    <p class="text-amber-400 uppercase tracking-widest text-sm font-bold">Mühendis Yaklaşımı</p>
-                    <p class="text-xs text-slate-300 mt-4 leading-relaxed">
-                        Fiyat vermeden önce, arsa eğimi ve iklim bölgenize uygun yalıtım kalınlığını hesaplamamız gerekiyor. Sadece 3 soruda analiz edelim.
-                    </p>
-                </div>
-                
-                <div class="relative z-10 mt-8 hidden md:block">
-                    <div class="flex items-center gap-3 text-xs text-slate-400 border-t border-slate-700 pt-4">
-                        <i class="fa-solid fa-user-shield text-xl"></i>
-                        <span>Verileriniz <span onclick="openModal('kvkkModal')" class="text-amber-400 underline cursor-pointer hover:text-white transition-colors">KVKK kapsamında</span> korunur.</span>
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-headset"></i>
                     </div>
-                </div>
-            </div>
-            
-            <div class="p-8 md:w-7/12 max-h-[80vh] overflow-y-auto relative">
-                
-                <div class="mb-8">
-                    <div class="flex justify-between text-[10px] font-bold text-slate-400 mb-2 uppercase tracking-wider">
-                        <span id="step-title-1" class="text-amber-500">1. Arazi</span>
-                        <span id="step-title-2">2. Tercih</span>
-                        <span id="step-title-3">3. Sonuç</span>
-                    </div>
-                    <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-                        <div id="progress-bar" class="bg-amber-500 h-full transition-all duration-500 w-1/3"></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Acil Servis & İletişim</h3>
+                        <p class="text-xs text-slate-400">Kimi aramak istersiniz?</p>
                     </div>
                 </div>
 
-                <form action="https://formsubmit.co/veniprefabrik@gmail.com" method="POST" id="wizardForm">
-                    <input type="hidden" name="_subject" value="VENI - Çok Adımlı Sistem Talebi">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://www.veniprefabrik.com">
-                    
-                    <div id="step1" class="step-container active">
-                        <h4 class="text-lg font-bold text-slate-900 mb-4">Arazi Durumunuz Nedir?</h4>
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-bold text-slate-500 mb-1">Arsa Tipi</label>
-                                <select name="Arsa Durumu" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:border-amber-400 cursor-pointer">
-                                    <option value="" disabled selected>Lütfen Seçiniz</option>
-                                    <option>İmarlı Arsa</option>
-                                    <option>Tarla / Bağ</option>
-                                    <option>Zeytinlik / Sit</option>
-                                    <option>Şu an arsam yok</option>
-                                </select>
+                <div class="space-y-3 pt-2">
+                    <a href="tel:+905318642495" class="p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-500 flex items-center justify-between group transition-all">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-500 mb-1">Zemin Durumu</label>
-                                <select name="Zemin Durumu" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:border-amber-400 cursor-pointer">
-                                    <option value="" disabled selected>Lütfen Seçiniz</option>
-                                    <option>Su Basmanı (Beton) Hazır</option>
-                                    <option>Toprak Zemin (İşlem Yapılmadı)</option>
-                                    <option>Çok Eğimli Arazi</option>
-                                </select>
+                                <p class="text-sm font-bold text-white">Sefer Çam</p>
+                                <p class="text-xs text-amber-400 font-semibold">0531 864 24 95</p>
                             </div>
                         </div>
-                        <button type="button" onclick="nextStep(2)" class="w-full mt-6 bg-slate-900 text-white font-bold py-3 rounded-xl hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200 flex justify-center items-center gap-2 group">
-                            Sonraki Adım <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                        </button>
-                    </div>
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">Hemen Ara</span>
+                    </a>
 
-                    <div id="step2" class="step-container">
-                        <h4 class="text-lg font-bold text-slate-900 mb-4">Proje Detayları</h4>
-                        <div class="space-y-4">
-                            <div class="p-3 bg-blue-50 border border-blue-100 rounded-xl">
-                                <label class="block text-xs font-bold text-engineeringBlue mb-1 uppercase tracking-wider"><i class="fa-solid fa-location-dot"></i> Kurulum Yeri (İl/İlçe)</label>
-                                <input type="text" name="Konum" placeholder="Örn: Muğla / Bodrum" class="w-full bg-white border border-blue-200 rounded-lg p-2.5 text-sm focus:border-engineeringBlue outline-none">
+                    <a href="tel:+905366176260" class="p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 flex items-center justify-between group transition-all">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-500 text-slate-950 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-500 mb-1">Hayalinizdeki Yapı Modeli</label>
-                                <select name="Model" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:border-amber-400 cursor-pointer">
-                                    <option value="" disabled selected>Lütfen Seçiniz</option>
-                                    <option>Tiny House (Ruhsatlı/Plakalı)</option>
-                                    <option>Müstakil Çelik Villa</option>
-                                    <option>Bağ Evi (Eko Seri)</option>
-                                    <option>Özel Mimar Çizimi İstiyorum</option>
-                                </select>
+                                <p class="text-sm font-bold text-white">Serdar Ertubç</p>
+                                <p class="text-xs text-blue-400 font-semibold">0536 617 62 60</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 mt-6">
-                            <button type="button" onclick="prevStep(1)" class="w-1/3 bg-slate-100 text-slate-600 font-bold py-3 rounded-xl hover:bg-slate-200 transition-colors"><i class="fa-solid fa-arrow-left"></i> Geri</button>
-                            <button type="button" onclick="nextStep(3)" class="w-2/3 bg-slate-900 text-white font-bold py-3 rounded-xl hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200 flex justify-center items-center gap-2 group">
-                                Sonraki Adım <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div id="step3" class="step-container">
-                        <div class="text-center mb-6">
-                            <div class="w-16 h-16 bg-green-50 text-green-500 border border-green-100 rounded-full flex items-center justify-center mx-auto text-2xl mb-3 shadow-inner"><i class="fa-solid fa-calculator"></i></div>
-                            <h4 class="text-xl font-bold text-slate-900">Analiziniz Hazır!</h4>
-                            <p class="text-xs text-slate-500 mt-1">Mühendislerimiz maliyet tablosunu size doğrudan iletebilmek için onayınızı bekliyor.</p>
-                        </div>
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-bold text-slate-500 mb-1 uppercase tracking-wider">Adınız Soyadınız</label>
-                                <input type="text" name="Ad Soyad" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:border-amber-400 transition-all" placeholder="Ad Soyad">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-500 mb-1 uppercase tracking-wider">Telefon Numaranız</label>
-                                <input type="tel" name="Telefon" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm focus:outline-none focus:border-amber-400 transition-all" placeholder="0 (5__) ___ __ __">
-                            </div>
-                        </div>
-                        <div class="flex gap-3 mt-6">
-                            <button type="button" onclick="prevStep(2)" class="w-1/4 bg-slate-100 text-slate-600 font-bold py-3 rounded-xl hover:bg-slate-200 transition-colors"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button type="submit" class="w-3/4 bg-amber-500 text-slate-900 font-bold py-3 rounded-xl hover:bg-amber-400 transition-colors shadow-lg shadow-amber-200 flex justify-center items-center gap-2 group">
-                                Teklifi Al <i class="fa-solid fa-paper-plane group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div id="planModal" class="modal fixed inset-0 z-[60] flex items-center justify-center bg-slate-900/90 backdrop-blur-md p-4">
-        <div class="modal-content bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden relative">
-            <button onclick="closeModal('planModal')" class="absolute top-4 right-4 w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-red-500 hover:text-white transition-colors z-10">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div class="grid grid-cols-1 md:grid-cols-3 h-[600px]">
-                <div class="md:col-span-2 bg-slate-100 flex items-center justify-center p-8">
-                     <img src="https://images.unsplash.com/photo-1599690947701-d007c6fbb94e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-contain opacity-80 grayscale mix-blend-multiply" alt="Kat Planı">
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 group-hover:bg-blue-500 group-hover:text-slate-950 transition-colors">Hemen Ara</span>
+                    </a>
                 </div>
-                <div class="bg-white p-8 flex flex-col justify-center">
-                    <span class="text-amber-500 font-bold tracking-widest uppercase text-xs mb-2">TEKNİK ÖZELLİKLER</span>
-                    <h3 class="text-3xl font-serif font-bold text-slate-900 mb-6">Loft Villa 140</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between border-b border-slate-100 pb-2">
-                            <span class="text-slate-500">Net Alan</span>
-                            <span class="font-bold">125 m²</span>
-                        </div>
-                        <div class="flex justify-between border-b border-slate-100 pb-2">
-                            <span class="text-slate-500">Oda Sayısı</span>
-                            <span class="font-bold">3+1</span>
-                        </div>
-                        <div class="flex justify-between border-b border-slate-100 pb-2">
-                            <span class="text-slate-500">Banyo</span>
-                            <span class="font-bold">2</span>
-                        </div>
-                        <div class="flex justify-between border-b border-slate-100 pb-2">
-                            <span class="text-slate-500">Tavan Yüksekliği</span>
-                            <span class="font-bold">3.20 m</span>
-                        </div>
-                    </div>
-                    <button onclick="closeModal('planModal'); openModal('offerModal')" class="mt-8 w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition-colors">
-                        Bu Model İçin Teklif Al
-                    </button>
+
+                <div class="pt-4 border-t border-slate-800 text-center">
+                    <a href="#hesaplayici" onclick="closeModal('quickModal')" class="text-xs font-bold text-slate-400 hover:text-amber-400 underline">
+                        Veya detaylı keşif formu doldurun →
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="kvkkModal" class="modal fixed inset-0 z-[70] flex items-center justify-center bg-slate-900/90 backdrop-blur-md p-4">
-        <div class="modal-content bg-white w-full max-w-3xl max-h-[85vh] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col">
-            <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                <h3 class="text-xl font-serif font-bold text-slate-900"><i class="fa-solid fa-scale-balanced text-amber-500 mr-3"></i>KVKK Aydınlatma Metni</h3>
-                <button onclick="closeModal('kvkkModal')" class="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="p-8 overflow-y-auto text-sm text-slate-600 space-y-5 font-medium leading-relaxed">
-                <p><strong>1. Veri Sorumlusu</strong><br>Veni Prefabrik A.Ş. ("Şirket") olarak, kişisel verilerinizin güvenliği hususuna azami hassasiyet göstermekteyiz. Bu bilinçle, Şirket olarak ürün ve hizmetlerimizden faydalanan kişiler dahil, Şirket ile ilişkili tüm şahıslara ait her türlü kişisel verilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVK Kanunu")'na uygun olarak işlenerek, muhafaza edilmesine büyük önem atfetmekteyiz.</p>
-                <p><strong>2. Kişisel Verilerin Toplanması, İşlenmesi ve İşleme Amaçları</strong><br>Toplanan kişisel verileriniz (Ad, Soyad, Telefon Numarası, E-posta Adresi, Lokasyon Bilgisi); Şirketimiz tarafından sunulan ürün ve hizmetlerden (Katalog gönderimi, Maliyet hesaplaması vb.) sizleri faydalandırmak için gerekli çalışmaların iş birimlerimiz tarafından yapılması, taleplerinize istinaden sizinle iletişime geçilmesi amaçlarıyla işlenmektedir.</p>
-                <p><strong>3. İşlenen Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</strong><br>Toplanan kişisel verileriniz, yukarıda belirtilen amaçların gerçekleştirilmesi doğrultusunda, hukuki uyuşmazlıkların giderilmesi veya ilgili mevzuatı gereği yetkili kamu kurum ve kuruluşlarına aktarılabilecektir. Verileriniz hiçbir şekilde 3. parti reklam ajanslarına satılmaz veya pazarlanmaz.</p>
-                <p><strong>4. Kişisel Veri Sahibinin Hakları</strong><br>KVK Kanunu'nun 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, amacına uygun kullanılıp kullanılmadığını öğrenme ve silinmesini/yok edilmesini talep etme hakkına sahipsiniz. Başvurularınızı <strong>veniprefabrik@gmail.com</strong> adresi üzerinden bize iletebilirsiniz.</p>
-            </div>
-            <div class="p-6 border-t border-slate-100 bg-slate-50 text-center">
-                <button onclick="closeModal('kvkkModal')" class="bg-slate-900 text-white font-bold py-3 px-12 rounded-xl hover:bg-slate-800 transition-colors shadow-lg">Okudum, Anladım</button>
-            </div>
-        </div>
-    </div>
-
+    <!-- Client-Side JavaScript Logic -->
     <script>
-        // Form Sihirbazı (Multi-step) İşlemleri
-        function nextStep(step) {
-            document.querySelectorAll('.step-container').forEach(el => el.classList.remove('active'));
-            document.getElementById('step' + step).classList.add('active');
-            
-            const progressBar = document.getElementById('progress-bar');
-            const title1 = document.getElementById('step-title-1');
-            const title2 = document.getElementById('step-title-2');
-            const title3 = document.getElementById('step-title-3');
+        // FAQ Accordion Toggle
+        function toggleFaq(element) {
+            const items = document.querySelectorAll('.faq-item');
+            items.forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('active');
+                }
+            });
+            element.classList.toggle('active');
+        }
 
-            if(step === 2) {
-                progressBar.style.width = '66%';
-                title1.classList.remove('text-amber-500');
-                title2.classList.add('text-amber-500');
-            } else if(step === 3) {
-                progressBar.style.width = '100%';
-                title2.classList.remove('text-amber-500');
-                title3.classList.add('text-amber-500');
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Modal Controls
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if(modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
             }
         }
 
-        function prevStep(step) {
-            document.querySelectorAll('.step-container').forEach(el => el.classList.remove('active'));
-            document.getElementById('step' + step).classList.add('active');
-            
-            const progressBar = document.getElementById('progress-bar');
-            const title1 = document.getElementById('step-title-1');
-            const title2 = document.getElementById('step-title-2');
-            const title3 = document.getElementById('step-title-3');
-
-            if(step === 1) {
-                progressBar.style.width = '33%';
-                title2.classList.remove('text-amber-500');
-                title1.classList.add('text-amber-500');
-            } else if(step === 2) {
-                progressBar.style.width = '66%';
-                title3.classList.remove('text-amber-500');
-                title2.classList.add('text-amber-500');
-            }
-        }
-
-        // Akıllı Modal İşlemleri
-        function openModal(modalId) {
-            document.getElementById(modalId).classList.add('active');
-            document.body.style.overflow = 'hidden'; 
-            
-            if(modalId === 'offerModal') {
-                prevStep(1);
-            }
-        }
-        
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.remove('active');
-            
-            if(document.querySelectorAll('.modal.active').length === 0) {
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if(modal) {
+                modal.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
         }
 
-        // Accordion İşlemleri
-        function toggleFaq(element) {
-            const allItems = document.querySelectorAll('.faq-item');
-            allItems.forEach(item => {
-                if (item !== element) {
-                    item.classList.remove('faq-active');
+        // Scroll to Calculator with specific radio preselected
+        function requestSpecificQuote(serviceName) {
+            const radios = document.querySelectorAll('input[name="hizmet"]');
+            radios.forEach(r => {
+                if(r.value === serviceName) {
+                    r.checked = true;
                 }
             });
-            element.classList.toggle('faq-active');
+            const calcSection = document.getElementById('hesaplayici');
+            if(calcSection) {
+                calcSection.scrollIntoView({ behavior: 'smooth' });
+            }
         }
 
-        // Katalog İndirme Mantığı
-        function katalogTalep(e) {
-            e.preventDefault(); 
-            
-            const btn = e.target.querySelector('button');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Hazırlanıyor...';
-            btn.disabled = true; 
-            
-            setTimeout(() => {
-                const link = document.createElement('a');
-                link.href = 'veni-katalog.pdf'; 
-                link.download = 'Veni_Prefabrik_Teknik_Katalog_2026.pdf'; 
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+        // Form Submission to WhatsApp
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitter = e.submitter ? e.submitter.value : 'whatsapp_sefer';
 
-                document.getElementById('katalogFormu').classList.add('hidden');
-                document.getElementById('katalogBasarili').classList.remove('hidden');
-                
-            }, 1500);
+            const hizmetRadio = document.querySelector('input[name="hizmet"]:checked');
+            const hizmet = hizmetRadio ? hizmetRadio.value : 'Kanal ve Baca Temizliği';
+            const mekanTipi = document.getElementById('mekanTipi').value;
+            const aciliyet = document.getElementById('aciliyet').value;
+            const musteriAd = document.getElementById('musteriAd').value;
+            const musteriTel = document.getElementById('musteriTel').value;
+            const musteriKonum = document.getElementById('musteriKonum').value;
+            const musteriNot = document.getElementById('musteriNot').value || 'Belirtilmedi';
+
+            const phone = (submitter === 'whatsapp_serdar') ? '905366176260' : '905318642495';
+            const recipientName = (submitter === 'whatsapp_serdar') ? 'Serdar Ertubç' : 'Sefer Çam';
+
+            const message = `*VENİ ALTYAPI TAMİRAT - SERVİS TALEBİ*%0A` +
+                            `--------------------------------%0A` +
+                            `*Hizmet:* ${encodeURIComponent(hizmet)}%0A` +
+                            `*Mekan:* ${encodeURIComponent(mekanTipi)}%0A` +
+                            `*Aciliyet:* ${encodeURIComponent(aciliyet)}%0A` +
+                            `*İsim:* ${encodeURIComponent(musteriAd)}%0A` +
+                            `*Telefon:* ${encodeURIComponent(musteriTel)}%0A` +
+                            `*Konum:* ${encodeURIComponent(musteriKonum)}%0A` +
+                            `*Açıklama:* ${encodeURIComponent(musteriNot)}%0A` +
+                            `--------------------------------%0A` +
+                            `Bilgi ve keşif fiyatı rica ediyorum.`;
+
+            // Open WhatsApp with prefilled detailed request
+            window.location.href = `https://wa.me/${phone}?text=${message}`;
+
+            document.getElementById('serviceForm').classList.add('hidden');
+            document.getElementById('formSuccess').classList.remove('hidden');
         }
     </script>
 </body>
