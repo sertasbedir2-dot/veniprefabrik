@@ -1,5 +1,6 @@
 {
   "name": "veni-altyapi-tamirat",
+  "description": "VENİ Altyapı Tamirat - Kanal, baca, havalandırma ve bahçe bakım hizmetleri",
   "version": "1.0.0",
   "type": "module",
   "scripts": {

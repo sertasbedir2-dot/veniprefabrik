@@ -1,6 +1,6 @@
 {
-  "name": "Veni Prefabrik",
-  "description": "VENİ Altyapı Tamirat - Kanal ve baca temizliği, havalandırma kanalı bakımı, profesyonel bahçe bakım ve çevre temizlik hizmetleri.",
+  "name": "VENİ Altyapı Tamirat",
+  "description": "Kanal ve baca temizliği, endüstriyel havalandırma kanalı bakımı, profesyonel bahçe bakım ve çevre temizlik hizmetleri.",
   "permissions": [],
   "capabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
