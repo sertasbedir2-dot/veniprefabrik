@@ -1,0 +1,8 @@
+{
+  "name": "Veni Prefabrik",
+  "description": "Türkiye'nin %100 mühendislik denetimli, S350GD yapısal çelik ve rollform teknolojisiyle üretilen yeni nesil prefabrik yapıları.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
